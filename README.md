@@ -1,3 +1,14 @@
+# ⚠️ Project Archived
+
+This repository has been archived.
+Active development continues in a private repository.
+
+As the sole contributor, I have relicensed the project from GPL-3 to a proprietary license.
+To make development sustainable, the app now includes a premium tier while keeping core features - including substance information and basic logging - free.
+Because of this partial monetization, future versions are closed-source to prevent redistribution of paid functionality.
+
+You can still explore this repository to learn from its earlier open-source implementation, but it will not receive further updates or support.
+
 Copyright (C) 2022 Isaak Hanimann.
 
 See the end of the file for license conditions.
@@ -23,10 +34,6 @@ Users can also log their ingestions, make notes and get an overview of their exp
 
 The project should be opened with the Xcode 13 or newer.
 Dependencies are managed with [Swift Package Manager](https://swift.org/package-manager), no further setup is needed.
-
-## Contributions
-
-This repo has been deprecated, ongoing development is happening in a private repo. If you want to do a fix or add a small improvement you can still do a PR on this repo, give your consent to include it in the private repo as part of a proprietary license and then your changes can potentially be included in future releases of the app.
 
 ## License
 ```
