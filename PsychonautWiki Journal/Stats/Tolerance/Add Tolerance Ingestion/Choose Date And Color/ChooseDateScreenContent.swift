@@ -29,7 +29,7 @@ struct ChooseDateScreenContent: View {
     var body: some View {
         screen.toolbar {
             ToolbarItem(placement: .cancellationAction) {
-                Button("Cancel", action: cancel)
+                Button(LocalizedStringKey("cancel"), action: cancel)
             }
             ToolbarItem(placement: .primaryAction) {
                 DoneButton(action: finish)
@@ -61,7 +61,7 @@ struct ChooseDateScreenContent: View {
                 }
             }
         }
-        .navigationTitle("Choose Date")
+        .navigationTitle("choose_date")
     }
 }
 

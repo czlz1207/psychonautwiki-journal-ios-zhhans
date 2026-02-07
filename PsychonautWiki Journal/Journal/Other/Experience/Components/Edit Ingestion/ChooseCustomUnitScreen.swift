@@ -31,12 +31,12 @@ struct ChooseCustomUnitScreen: View {
                 }
             }
             if customUnit != nil {
-                Button("Default") {
+                Button("default") {
                     customUnit = nil
                     dismiss()
                 }
             }
-        }.navigationTitle("Choose Unit")
+        }.navigationTitle("choose_unit")
     }
 }
 

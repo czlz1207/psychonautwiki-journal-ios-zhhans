@@ -31,7 +31,7 @@ struct SubstanceScreen: View {
             Group {
                 Group { // group is here because we cannot have more than 10 subviews
                     if let summary = substance.summary {
-                        Section("Summary") {
+                        Section("summary") {
                             VStack {
                                 Text(summary)
                                 if !substance.categories.isEmpty {
@@ -41,13 +41,13 @@ struct SubstanceScreen: View {
                         }
                     } else {
                         if !substance.categories.isEmpty {
-                            Section("Categories") {
+                            Section("categories") {
                                 CategorySection(substance: substance)
                             }
                         }
                     }
                     if let effects = substance.effectsSummary {
-                        Section("Effects") {
+                        Section("effects") {
                             Text(effects)
                         }
                     }
@@ -61,7 +61,7 @@ struct SubstanceScreen: View {
                         DurationSection(substance: substance)
                     }
                     if let interactions = substance.interactions {
-                        Section("Interactions") {
+                        Section("interactions_title") {
                             InteractionsGroup(
                                 interactions: interactions,
                                 substance: substance
@@ -77,24 +77,24 @@ struct SubstanceScreen: View {
                 }
                 Group {
                     if let acute = substance.generalRisks {
-                        Section("Acute Risk") {
+                        Section("acute_risk") {
                             Text(acute)
                         }
                     }
                     if let longTerm = substance.longtermRisks {
-                        Section("Long-term Risk") {
+                        Section("long_term_risk") {
                             Text(longTerm)
                         }
                     }
                     if !substance.saferUse.isEmpty {
-                        Section("Safer Use") {
+                        Section("safer_use") {
                             ForEach(substance.saferUse, id: \.self) { point in
                                 Text(point)
                             }
                         }
                     }
                     if let addictionPotential = substance.addictionPotential {
-                        Section("Addiction Potential") {
+                        Section("addiction_potential") {
                             Text(addictionPotential)
                         }
                     }
@@ -104,7 +104,7 @@ struct SubstanceScreen: View {
         }
         .toolbar {
             ToolbarItem(placement: .topBarTrailing) {
-                NavigationLink("Article", value: GlobalNavigationDestination.webView(articleURL: substance.url))
+                NavigationLink("article", value: GlobalNavigationDestination.webView(articleURL: substance.url))
             }
         }
         .fullScreenCover(isPresented: $isShowingAddIngestionSheet) {

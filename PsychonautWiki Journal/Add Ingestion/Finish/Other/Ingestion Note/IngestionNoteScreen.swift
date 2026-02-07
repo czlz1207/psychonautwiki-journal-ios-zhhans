@@ -43,7 +43,7 @@ struct IngestionNoteScreen: View {
 
     private var screen: some View {
         Form {
-            TextField("Enter Note", text: $note, axis: .vertical)
+            TextField(LocalizedStringKey("enter_note"), text: $note, axis: .vertical)
                 .onSubmit {
                     dismiss()
                 }
@@ -51,7 +51,7 @@ struct IngestionNoteScreen: View {
                 .focused($textFieldIsFocused)
                 .autocapitalization(.sentences)
             if !viewModel.suggestedNotesInOrder.isEmpty {
-                Section("Suggestions") {
+                Section(LocalizedStringKey("suggestions")) {
                     ForEach(viewModel.suggestedNotesInOrder, id: \.self) { suggestedNote in
                         Button {
                             note = suggestedNote
@@ -63,7 +63,7 @@ struct IngestionNoteScreen: View {
             }
         }
         .scrollDismissesKeyboard(.interactively)
-        .navigationTitle("Ingestion Note")
+        .navigationTitle("ingestion_note")
     }
 }
 

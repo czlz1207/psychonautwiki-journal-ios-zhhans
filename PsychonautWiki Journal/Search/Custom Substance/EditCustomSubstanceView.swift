@@ -29,8 +29,8 @@ struct EditCustomSubstanceView: View {
             Section("Name") {
                 TextField("Name", text: $name)
             }
-            Section("Description") {
-                TextField("Description", text: $description)
+            Section(LocalizedStringKey("description")) {
+                TextField(LocalizedStringKey("description"), text: $description)
             }
             Section("Units") {
                 TextField("Units", text: $units)
@@ -38,15 +38,15 @@ struct EditCustomSubstanceView: View {
         }
         .scrollDismissesKeyboard(.interactively)
         .confirmationDialog(
-            "Are you sure you want to delete this substance?",
+            LocalizedStringKey("delete_substance_question"),
             isPresented: $isShowingConfirmation
         ) {
-            Button("Delete Substance", role: .destructive) {
+            Button("delete_substance", role: .destructive) {
                 dismiss()
                 PersistenceController.shared.viewContext.delete(customSubstance)
                 PersistenceController.shared.saveViewContext()
             }
-            Button("Cancel", role: .cancel) {}
+            Button(LocalizedStringKey("cancel"), role: .cancel) {}
         }
         .onAppear {
             name = customSubstance.nameUnwrapped

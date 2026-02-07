@@ -87,7 +87,7 @@ struct DosageStatYearChart: View {
                     .frame(height: 240)
             }
         } else {
-            Text("No \(substanceName) ingestions").foregroundStyle(.secondary)
+            Text("no_ingestions_total").foregroundStyle(.secondary)
         }
     }
 }

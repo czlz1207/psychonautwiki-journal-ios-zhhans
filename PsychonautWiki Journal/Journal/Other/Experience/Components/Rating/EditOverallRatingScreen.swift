@@ -26,19 +26,19 @@ struct EditOverallRatingScreen: View {
             SelectRatingSection(selectedRating: $selectedRating)
             RatingExplanationSection()
             Button(action: delete) {
-                Label("Delete Rating", systemImage: "trash").foregroundColor(.red)
+                Label("delete_rating", systemImage: "trash").foregroundColor(.red)
             }
         }.onAppear {
             selectedRating = rating.optionUnwrapped
         }
         .toolbar {
             ToolbarItem(placement: .cancellationAction) {
-                Button("Cancel") {
+                Button("cancel") {
                     dismiss()
                 }
             }
             ToolbarItem(placement: .confirmationAction) {
-                Button("Save") {
+                Button("save") {
                     save()
                 }
             }

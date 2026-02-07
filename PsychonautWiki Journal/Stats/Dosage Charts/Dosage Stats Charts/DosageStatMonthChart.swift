@@ -74,7 +74,7 @@ struct DosageStatMonthChart: View {
                     .frame(height: 240)
             }
         } else {
-            Text("No \(substanceName) ingestions in the last 12 months").foregroundStyle(.secondary)
+            Text("no_ingestions_last_12_months").foregroundStyle(.secondary)
         }
     }
 }

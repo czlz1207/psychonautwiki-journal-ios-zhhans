@@ -49,7 +49,7 @@ struct CustomSubstanceSuggestionView: View {
                                 estimatedDoseStandardDeviation: doseAndUnit.estimatedDoseStandardDeviation))
                         .buttonStyle(.bordered).fixedSize()
                     } else {
-                        NavigationLink("Unknown", value: FinishIngestionScreenArguments(
+                        NavigationLink("unknown", value: FinishIngestionScreenArguments(
                             substanceName: customSubstanceSuggestions.customSubstanceName,
                             administrationRoute: administrationRoute,
                             dose: doseAndUnit.dose,
@@ -61,7 +61,7 @@ struct CustomSubstanceSuggestionView: View {
                     }
                 }
                 if let units = customSubstanceSuggestions.dosesAndUnit.first?.units {
-                    NavigationLink("Other dose", value: CustomChooseDoseScreenArguments(
+                    NavigationLink("other_dose", value: CustomChooseDoseScreenArguments(
                         substanceName: customSubstanceSuggestions.customSubstanceName,
                         units: units,
                         administrationRoute: administrationRoute))

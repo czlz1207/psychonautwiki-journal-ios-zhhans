@@ -73,7 +73,7 @@ struct SubstanceSearchBarWithFilter: View {
             .padding(.leading, horizontalPadding)
             .padding(.trailing, isFocused.wrappedValue ? 0 : horizontalPadding)
             if isFocused.wrappedValue {
-                Button("Cancel") {
+                Button("cancel") {
                     withAnimation {
                         text = ""
                         clearCategories()
@@ -115,6 +115,6 @@ private struct SearchBarContainer: View {
             SearchBarContainer()
             Spacer()
         }
-        .navigationTitle("Substances")
+        .navigationTitle("substances")
     }
 }

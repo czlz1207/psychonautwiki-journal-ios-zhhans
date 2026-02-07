@@ -24,7 +24,7 @@ struct CustomSubstanceChooseRouteScreen: View {
     var body: some View {
         screen.toolbar {
             ToolbarItem(placement: .cancellationAction) {
-                Button("Cancel") {
+                Button("cancel") {
                     dismiss()
                 }
             }
@@ -58,7 +58,7 @@ struct CustomSubstanceChooseRouteScreen: View {
             }
             if isEyeOpen {
                 NavigationLink(value: AddIngestionDestination.saferRoutes) {
-                    Label("Safer Routes", systemImage: "info.circle")
+                    Label("safer_routes_label", systemImage: "info.circle")
                 }
                 .padding(.vertical)
             }

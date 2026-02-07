@@ -25,7 +25,7 @@ struct ToleranceChartOverView: View {
     var body: some View {
         TimelineView(.everyMinute) { context in
             VStack(alignment: .leading) {
-                Text("Current Tolerance")
+                Text("current_tolerance")
                     .font(.callout)
                     .foregroundStyle(.secondary)
                 title
@@ -57,7 +57,7 @@ struct ToleranceChartOverView: View {
         let halfToleranceNames = getSubstanceNamesWithHalfTolerance()
         let allToleranceNames = fullToleranceNames + halfToleranceNames
         if allToleranceNames.isEmpty {
-            return Text("Zero tolerance")
+            return Text("zero_tolerance")
         } else {
             return Text(allToleranceNames, format: .list(type: .and))
         }

@@ -61,13 +61,13 @@ struct SubstanceDetailsScreen: View {
                         }
                     }
                 } else {
-                    Text("No experiences").font(.headline)
+                    Text("no_experiences").font(.headline)
                 }
             } footer: {
-                Text("Each occurence of the substance in an experience is counted as 1.")
+                Text("each_occurrence_footer")
             }
         }
-        .navigationTitle("Substances")
+        .navigationTitle("substances_title")
     }
 }
 

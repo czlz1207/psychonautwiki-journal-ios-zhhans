@@ -383,33 +383,33 @@ enum SubstanceColor: String, CaseIterable, Identifiable, Codable, Comparable {
     var name: String {
         switch self {
         case .blue:
-            return "blue"
+            return NSLocalizedString("color_blue", comment: "")
         case .brown:
-            return "brown"
+            return NSLocalizedString("color_brown", comment: "")
         case .cyan:
-            return "cyan"
+            return NSLocalizedString("color_cyan", comment: "")
         case .green:
-            return "green"
+            return NSLocalizedString("color_green", comment: "")
         case .indigo:
-            return "indigo"
+            return NSLocalizedString("color_indigo", comment: "")
         case .mint:
-            return "mint"
+            return NSLocalizedString("color_mint", comment: "")
         case .orange:
-            return "orange"
+            return NSLocalizedString("color_orange", comment: "")
         case .pink:
-            return "pink"
+            return NSLocalizedString("color_pink", comment: "")
         case .purple:
-            return "purple"
+            return NSLocalizedString("color_purple", comment: "")
         case .red:
-            return "red"
+            return NSLocalizedString("color_red", comment: "")
         case .teal:
-            return "teal"
+            return NSLocalizedString("color_teal", comment: "")
         case .yellow:
-            return "yellow"
+            return NSLocalizedString("color_yellow", comment: "")
         case .fireEngineRed:
             return "fire engine red"
         case .coral:
-            return "coral"
+            return NSLocalizedString("color_coral", comment: "")
         case .tomato:
             return "tomato"
         case .cinnabar:

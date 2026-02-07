@@ -1,0 +1,613 @@
+/* 导航 */
+"substances" = "物质";
+"safer" = "安全用药";
+"stats" = "统计";
+"journal" = "日志";
+"settings" = "设置";
+
+/* 常用操作 */
+"cancel" = "取消";
+"done" = "完成";
+"next" = "下一步";
+"save" = "保存";
+"add" = "添加";
+"edit" = "编辑";
+"delete" = "删除";
+"ok" = "确定";
+"yes" = "是";
+"no" = "否";
+"search" = "搜索";
+"filter" = "筛选";
+"close" = "关闭";
+
+/* 隐私与安全 */
+"privacy" = "隐私";
+"require_app_unlock" = "需要解锁应用";
+"enable_face_id_message" = "在设置中为Journal启用Face ID以锁定应用。";
+"time_option" = "时间选项";
+"face_id_disabled_message" = "Face ID已禁用。\n在设置中为Journal启用它以解锁应用。";
+
+/* 界面设置 */
+"ui" = "界面";
+"edit_substance_colors" = "编辑物质颜色";
+"custom_units" = "自定义单位";
+"hide_dosage_dots" = "隐藏剂量点";
+"hide_tolerance_chart" = "隐藏耐受性图表";
+"hide_substance_info" = "隐藏物质信息";
+"draw_redoses_individually" = "单独绘制补服";
+"independent_substance_heights" = "独立的物质高度";
+"automatic_live_activities" = "自动实时活动";
+
+/* 日志数据 */
+"journal_data" = "日志数据";
+"journal_data_footer" = "您可以将所有数据导出到手机上的文件中，并在以后再次导入。这样您可以将数据迁移到Android或删除应用而不会丢失数据。";
+"export_data" = "导出数据";
+"import_data" = "导入数据";
+"delete_everything" = "删除所有数据";
+"are_you_sure" = "您确定吗？";
+"import" = "导入";
+"import_warning" = "导入将删除应用中当前的所有数据，并用导入的数据替换它。";
+"delete_everything_title" = "删除所有数据？";
+"delete" = "删除";
+"delete_warning" = "这将删除您的所有体验、摄入记录、自定义物质和喷雾。";
+
+/* 沟通交流 */
+"communication" = "沟通交流";
+"question_bug_report" = "问题、错误报告";
+"frequently_asked_questions" = "常见问题";
+"source_code" = "源代码";
+
+/* 通用 */
+"version" = "版本";
+"permission_denied" = "权限被拒绝";
+"import_failed" = "导入失败";
+"import_successful" = "导入成功";
+"delete_successful" = "删除成功";
+"export_successful" = "导出成功";
+"export_failed" = "导出失败";
+"you" = "您";
+"name" = "名称";
+"dose" = "剂量";
+"time" = "时间";
+"notes" = "备注";
+"estimated_dose_standard_placeholder" = "标准单位的估计剂量";
+"search_substance" = "搜索物质";
+"search_experiences" = "搜索体验";
+
+/* 添加摄入 */
+"safer_routes" = "更安全的给药途径";
+"other_routes" = "其他给药途径";
+"info_not_approved" = "信息未经PsychonautWiki版主批准。";
+"add_new_custom_unit" = "添加新的自定义单位";
+"pure_dose" = "纯%@剂量";
+"add_a_custom_unit" = "添加自定义单位";
+"there_are_no_documented_interactions" = "没有记录的相互作用";
+
+/* 体验 */
+"experience" = "体验";
+"new_experience" = "新体验";
+"consumer" = "使用者";
+"add_note" = "添加备注";
+"add_title" = "添加标题";
+"add_location" = "添加地点";
+"color" = "%@颜色";
+"start_live_activity" = "启动实时活动";
+"title" = "标题";
+"location" = "地点";
+"rating" = "评分";
+"overall_rating" = "总体评分";
+
+/* 时间 */
+"time_point" = "时间点";
+"time_range" = "时间范围";
+"reset_time" = "重置时间";
+"ingestion_time" = "摄入时间";
+"start_time" = "开始时间";
+"end_time" = "结束时间";
+"time" = "时间";
+
+/* 剂量 */
+"units" = "单位";
+"units_placeholder" = "例如：杯";
+"estimated_dose" = "估计剂量";
+"pure" = "纯";
+"unknown_dose" = "未知剂量";
+
+/* 导航标题 */
+"safer_use" = "安全用药";
+"your_stats" = "你的统计";
+"total_experiences" = "总体验数";
+"choose_date" = "选择日期";
+"chart_limitations" = "图表限制";
+"tolerance" = "耐受性";
+"add_temp_ingestion" = "添加临时摄入";
+"tolerances" = "耐受性";
+"ingestion_note" = "摄入备注";
+"choose_color" = "选择颜色";
+"edit_consumer" = "编辑使用者";
+"choose_experience" = "选择体验";
+"experience_location" = "体验地点";
+"experience_title" = "体验标题";
+"mdma_dose" = "MDMA剂量";
+"share_app" = "分享应用";
+"edit_colors" = "编辑颜色";
+"create_custom" = "创建自定义";
+"add_custom_unit" = "添加自定义单位";
+"choose_substance" = "选择物质";
+"edit_unit" = "编辑单位";
+"archive" = "归档";
+"dosage_classification" = "剂量分级";
+"reagent_testing" = "试剂检测";
+"administration_routes" = "给药途径";
+"testing_services" = "检测服务";
+"volumetric_dosing" = "容量剂量";
+"safer_hallucinogens" = "更安全的致幻剂";
+"add_spray" = "添加喷雾";
+"spray_calculator" = "喷雾计算器";
+"dosage_guide" = "剂量指南";
+"faq" = "常见问题";
+"calendar" = "日历";
+"timeline_info" = "时间线信息";
+"edit_notes" = "编辑备注";
+"add_timed_note" = "添加定时备注";
+"edit_title" = "编辑标题";
+"add_rating" = "添加评分";
+"edit_rating" = "编辑评分";
+"finish_ingestion" = "完成摄入";
+
+/* 分区标题 */
+"ingestion" = "摄入";
+"interactions" = "相互作用";
+"duration" = "持续时间";
+"dosage" = "剂量";
+"effects" = "效果";
+"pharmacology" = "药理学";
+"chemistry" = "化学";
+"toxicity" = "毒性";
+"legal" = "法律";
+"description" = "描述";
+"summary" = "总结";
+"subjective_effects" = "主观效果";
+"routes_of_administration" = "给药途径";
+
+/* 胃饱腹度 */
+"stomach_fullness" = "胃饱腹度";
+"empty" = "空腹";
+"quarter_full" = "四分之一饱";
+"half_full" = "半饱";
+"full" = "饱腹";
+"very_full" = "非常饱";
+"hours_delay" = "小时延迟";
+
+/* 剂量水平 */
+"threshold" = "阈值";
+"light" = "轻度";
+"common" = "常规";
+"strong" = "强效";
+"heavy" = "重度";
+
+/* 统计 */
+"experiences" = "体验";
+"cumulative_dose" = "累积剂量";
+"average_dose" = "平均剂量";
+"timeline" = "时间线";
+"chart" = "图表";
+"list" = "列表";
+
+/* 给药途径 */
+"oral" = "口服";
+"smoked" = "吸食";
+"insufflated" = "鼻吸";
+"sublingual" = "舌下";
+"buccal" = "颊部";
+"rectal" = "直肠";
+"transdermal" = "透皮";
+"subcutaneous" = "皮下";
+"intramuscular" = "肌肉";
+"intravenous" = "静脉";
+"inhaled" = "吸入";
+
+/* 定时备注 */
+"timed_note" = "定时备注";
+"timed_notes" = "定时备注";
+
+/* 自定义物质 */
+"custom_substance" = "自定义物质";
+"custom_substances" = "自定义物质";
+"create_custom_substance" = "创建自定义物质";
+
+/* 其他标签 */
+"add_ingestion" = "添加摄入";
+"add_temporary_ingestion" = "添加临时摄入";
+"unused_colors" = "未使用的颜色";
+"used_colors" = "已使用的颜色";
+"create_new" = "创建新的";
+"close_experiences" = "最近的体验";
+"selected_location" = "选定的地点";
+"suggestions" = "建议";
+"chasing_the_dragon" = "追龙法（铝箔吸食）";
+"nicotine_content_vs_dose" = "尼古丁含量与剂量";
+"info" = "信息";
+"disclaimer" = "免责声明";
+"max_dose_calculator" = "最大剂量计算器";
+"choose_dose" = "选择剂量";
+"prefer_to_log_pill" = "更喜欢记录药片？";
+"pills" = "药片";
+"desirable_vs_adverse_effects" = "期望效果与不良反应";
+"estimate_unknown_doses_as" = "将未知剂量估计为";
+"dosage_stats" = "剂量统计";
+"options" = "选项";
+"original_unit" = "原始单位";
+"ingestion_preview" = "摄入预览";
+"dose_picker_preview" = "剂量选择器预览";
+"research" = "研究";
+"testing" = "检测";
+"set" = "心态";
+"setting" = "环境";
+"combinations" = "组合";
+"allergy_tests" = "过敏测试";
+"reflection" = "反思";
+"safety_of_others" = "他人安全";
+"recovery_position" = "恢复体位";
+"add_ingestion_at_same_time" = "在同一时间添加摄入";
+
+/* 其他UI元素 */
+"new_ingestion" = "新摄入";
+"new_custom_substance" = "新自定义物质";
+"choose_color" = "选择颜色";
+"choose_experience" = "选择体验";
+"choose_unit" = "选择单位";
+"delete_substance" = "删除物质";
+"delete_ingestion" = "删除摄入";
+"show_monthly_average" = "显示月平均值";
+"show_yearly_average" = "显示年平均值";
+"unknown_dose_estimate" = "未知剂量估计";
+"enter_name" = "输入名称";
+"consumer_name" = "使用者名称";
+"enter_note" = "输入备注";
+"suggestions" = "建议";
+
+/* 子页面导航标题 */
+"edit_consumer" = "编辑使用者";
+"edit_colors" = "编辑颜色";
+"edit_rating" = "编辑评分";
+"edit_note" = "编辑备注";
+"ingestion_note" = "摄入备注";
+
+/* 删除操作 */
+"delete_location" = "删除地点";
+"delete_unit" = "删除单位";
+"delete_rating" = "删除评分";
+"delete_note" = "删除备注";
+"delete_experience" = "删除体验";
+"delete_coordinates" = "删除坐标";
+
+/* 添加操作 */
+"add_a_custom_unit" = "添加自定义单位";
+"add_new_custom_unit" = "添加新的自定义单位";
+
+/* 无数据提示 */
+"no_results" = "无结果";
+"no_experiences" = "无体验";
+"none" = "无";
+"no_ingestions_yet" = "还没有摄入记录";
+"no_substance" = "无物质";
+"no_custom_units" = "无自定义单位";
+"no_archived_custom_units" = "无已归档的自定义单位";
+"no_colors_added_yet" = "还没有添加颜色";
+"no_ingestions_using_unit" = "还没有摄入使用此单位";
+"no_experiences_match_search" = "没有匹配搜索的体验";
+"no_favorites_match_search" = "没有匹配搜索的收藏";
+"no_tolerance_info" = "无耐受性信息";
+"no_ingestions_with_tolerance" = "无带有耐受性信息的摄入";
+"no_documented_interactions" = "无记录的相互作用";
+
+/* 时间和位置 */
+"current_location" = "当前位置";
+"note_color" = "备注颜色";
+"time_range" = "时间范围";
+"show_average" = "显示平均值";
+"enable_location_access" = "启用位置访问";
+"location_access_footer" = "在设置中启用位置访问以自动将位置添加到您的体验中。";
+
+/* 剂量消息 */
+"dosage_unit_mismatch" = "并非所有 %@ 的摄入都使用 %@ 作为纯单位。因此无法将这些剂量相加以显示图表。";
+"no_ingestions_last_30_days" = "过去30天内没有 %@ 摄入";
+"no_ingestions_last_26_weeks" = "过去26周内没有 %@ 摄入";
+"no_ingestions_last_12_months" = "过去12个月内没有 %@ 摄入";
+"no_ingestions_total" = "没有 %@ 摄入";
+
+/* 喷雾提示 */
+"spray_note" = "提示：将其装入喷雾瓶并计算喷射次数。为确保最后几次喷射仍能正常工作，请使用小型喷雾瓶（5毫升）并完全装满。";
+
+/* 相对时间 */
+"now_after_start" = "现在距开始 %@ 后";
+
+/* Toggle 标签 */
+"estimate" = "估计";
+"relative_time" = "相对时间";
+"is_part_of_timeline" = "是时间线的一部分";
+"hide_in_timeline" = "在时间线中隐藏";
+"overall_rating" = "总体评分";
+"archive" = "归档";
+
+/* Picker 标签 */
+"units" = "单位";
+"time_picker_option" = "时间选择器选项";
+"gender" = "性别";
+"stomach" = "胃";
+"time_range_picker" = "时间范围";
+"stomach_fullness" = "胃饱腹度";
+"shulgin_rating" = "舒尔金评分";
+"ingestion_date" = "摄入日期";
+
+/* NavigationLink 标签 */
+"volumetric_dosing_recommended" = "建议体积剂量法";
+"use_unknown_dose" = "使用未知剂量";
+"use_unknown_dose_lower" = "使用未知剂量";
+"unknown" = "未知";
+"other_dose" = "其他剂量";
+"drug_testing_services" = "药物检测服务";
+"reagent_testing" = "试剂检测";
+"volumetric_liquid_dosing" = "体积液体剂量法";
+"safer_hallucinogen_guide" = "致幻剂安全指南";
+"administration_routes_info" = "给药途径信息";
+"article" = "文章";
+
+/* Link 标签 */
+"emcdda_statistics" = "EMCDDA统计数据";
+"dancesafe" = "DanceSafe";
+"bunk_police" = "Bunk Police";
+"share_link" = "分享链接";
+"share_app_store_link" = "分享应用商店链接";
+"share_play_store_link" = "分享Play商店链接";
+
+/* 性别选项 */
+"male" = "男性";
+"female" = "女性";
+
+/* 时间选择器选项 */
+"time_point" = "时间点";
+"time_range_option" = "时间范围";
+
+/* 编辑摄入 */
+"edit_ingestion" = "编辑摄入";
+
+/* 其他按钮 */
+"done" = "完成";
+"today" = "今天";
+"ok" = "好的";
+"disclaimer" = "免责声明";
+"now" = "现在";
+"default" = "默认";
+"clear_highlighted_substances" = "清除高亮物质";
+
+/* 其他标签 */
+"safer_routes_label" = "更安全的给药途径";
+"reset_time" = "重置时间";
+"you" = "你";
+"recovery_position_video" = "恢复姿势视频";
+"spray_calculator" = "喷雾计算器";
+"toggle_favorite" = "切换收藏";
+"new_ingestion" = "新摄入";
+"timeline_screen" = "时间轴界面";
+"tolerance_info" = "耐受性信息";
+"safer_hallucinogens" = "致幻剂安全指南";
+"see_interactions" = "查看相互作用";
+"edit_location" = "编辑位置";
+"hidden" = "已隐藏";
+"open_link" = "打开链接";
+"open_app_store_link" = "打开应用商店链接";
+"open_play_store_link" = "打开Play商店链接";
+"stop_live_activity" = "停止实时活动";
+"start_live_activity_button" = "开始实时活动";
+
+/* 其他Section标题 */
+"pure_dose" = "纯 %@ 剂量";
+"chasing_the_dragon" = "追龙（铝箔吸食）";
+"nicotine_content_vs_dose" = "尼古丁含量与剂量";
+"info" = "信息";
+"disclaimer_title" = "免责声明";
+"dose_per_unit" = "每 %@ 的剂量";
+"pills" = "药丸";
+"desirable_vs_adverse" = "期望效果与不良反应";
+"ios_and_android" = "iOS和Android";
+"ios_app" = "iOS应用";
+"android_app" = "Android应用";
+"oral_max_dose_calculator" = "口服最大剂量计算器";
+"duration" = "持续时间";
+"limitations" = "局限性";
+"understanding_visualization" = "理解可视化";
+"summary" = "摘要";
+"categories" = "分类";
+"effects" = "效果";
+"interactions_title" = "相互作用";
+"acute_risk" = "急性风险";
+"long_term_risk" = "长期风险";
+"safer_use" = "更安全的使用";
+"addiction_potential" = "成瘾潜力";
+"toxicity" = "毒性";
+"kit_sellers" = "试剂盒销售商";
+
+/* 其他导航标题 */
+"safer_substance" = "更安全的 %@";
+"timeline_info" = "时间轴信息";
+"experience_title" = "体验标题";
+"ingestion_note" = "摄入备注";
+"substances_title" = "物质";
+"total_experiences" = "总体验";
+"add_temp_ingestion" = "添加临时摄入";
+"choose_date" = "选择日期";
+"tolerance" = "耐受性";
+"administration_routes" = "给药途径";
+"safer_hallucinogens_title" = "致幻剂安全指南";
+"archive_title" = "归档";
+"share_app_title" = "分享应用";
+"testing_services" = "检测服务";
+"volumetric_dosing" = "容积给药法";
+"chart_limitations" = "图表局限性";
+"add_spray_title" = "添加喷雾";
+"tolerances" = "耐受性";
+"interactions_screen" = "相互作用";
+"dose_response" = "剂量反应";
+"timeline_info_screen" = "时间轴信息";
+"add_shulgin_rating" = "添加舒尔金评分";
+
+/* 统计界面标题 */
+"current_tolerance" = "当前耐受性";
+"zero_tolerance" = "无耐受性";
+"total_experiences_last_12_months" = "过去12个月总体验";
+"experiences_count" = "%lld 次体验";
+"most_experiences_last_12_months" = "过去12个月最多体验";
+"none_lowercase" = "无";
+
+/* 统计详细页面 */
+"experiences" = "次体验";
+"remove_highlight" = "取消高亮";
+"highlight" = "高亮";
+"no_experiences" = "无体验";
+"substance_count_footer" = "如果一种物质是体验中n种物质之一，则计为1/n次体验";
+"each_occurrence_footer" = "体验中每次出现的物质计为1次。";
+"last_30_days" = "过去30天";
+"last_12_months" = "过去12个月";
+"years" = "年份";
+
+/* 耐受性等级 */
+"start_date" = "开始日期";
+"half" = "半耐受";
+"zero" = "无耐受";
+"cross_tolerance_with" = "交叉耐受性：";
+
+/* 颜色名称 */
+"color_blue" = "蓝色";
+"color_brown" = "棕色";
+"color_cyan" = "青色";
+"color_green" = "绿色";
+"color_indigo" = "靛蓝色";
+"color_mint" = "薄荷色";
+"color_orange" = "橙色";
+"color_pink" = "粉色";
+"color_purple" = "紫色";
+"color_red" = "红色";
+"color_teal" = "青绿色";
+"color_yellow" = "黄色";
+"color_coral" = "珊瑚色";
+
+/* 相互作用 */
+"interactions" = "相互作用";
+"no_documented_interactions" = "没有记录的相互作用";
+
+/* 剂量页面 */
+"pure_dose" = "纯剂量";
+"pure_oral_dose" = "纯口服剂量";
+"pure_route_dose" = "纯%@剂量";
+"estimated_standard_deviation" = "估计标准偏差";
+"prefer_different_unit" = "更倾向于使用不同的单位,例如%@?";
+"prefer_log_weight" = "更倾向于记录花蕾、哈希的重量,或记录与关节、雾化器或水烟相关的其他单位?";
+"prefer_log_mushrooms" = "更倾向于记录蘑菇的重量而不是毫克裸盖菇素?";
+"prefer_log_drinks" = "更倾向于记录饮品、啤酒或葡萄酒的数量而不是克乙醇?";
+"prefer_log_caffeine" = "更倾向于记录咖啡、茶或能量饮料而不是毫克咖啡因?";
+"pills_capsules_powder" = "药片、胶囊或原始粉末重量";
+"hits" = "吸食次数";
+"sprays_spoons_lines" = "喷雾、勺子、舀勺、线条或原始粉末重量";
+"pouches" = "小袋";
+"patches" = "贴片";
+"pills_sprays_powder" = "药片、喷雾、勺子或粉末重量";
+"log_custom_unit" = "记录%@(%@)";
+"info" = "信息";
+"dose_disclaimer" = "剂量信息来自用户和各种资源。这不是建议,应与其他来源进行核实以确保准确性。由于个体体重、耐受性、代谢和个人敏感性的差异,请始终从较低剂量开始。";
+"smoking_dosage_note" = "根据您的吸烟/吸入方法,不同数量的物质在进入身体前会损失。剂量应反映实际吸入的物质量。";
+
+/* 给药途径 */
+"swallowed" = "吞服";
+
+/* 容积给药法 */
+"volumetric_dosing" = "容积给药法";
+"volumetric_dosing_desc" = "容积给药法是将化合物溶解在液体中以便于测量的过程。为了减少伤害,对于某些效力太强而无法用传统称重秤测量的化合物,使用容积给药法非常重要。\n许多精神活性物质,包括苯二氮卓类和某些致幻剂,在少于一毫克时就具有活性。如此小的量无法用普通数字秤准确测量,因此必须通过称量较大量的化合物并将其溶解在计算好的适当液体体积中来进行容积给药。\n\n在互联网上搜索以确定使用什么溶剂。所有物质都应溶于酒精,但许多物质不会溶于水。";
+/* 标题和页眉 */
+"choose_date" = "选择日期";
+"other_routes" = "其他给药途径";
+"limitations" = "局限性";
+"understanding_visualization" = "理解可视化";
+
+/* 时间显示选项 */
+"regular_time" = "常规时间";
+"time_relative_now" = "相对于现在的时间";
+"time_relative_start" = "相对于开始的时间";
+"time_between" = "时间间隔";
+"auto" = "自动";
+
+/* 剂量等级 */
+"threshold" = "阈值";
+"light" = "轻度";
+"common" = "常规";
+"strong" = "强效";
+"heavy" = "重度";
+
+/* 给药途径名称 */
+"sublingual" = "舌下";
+"under_tongue" = "舌下含服";
+"buccal" = "颊部";
+"between_gums_cheek" = "牙龈与脸颊之间";
+"insufflated" = "鼻吸";
+"sniffed" = "鼻吸";
+"rectal" = "直肠";
+"up_the_butt" = "直肠给药";
+"transdermal" = "透皮";
+"through_skin" = "通过皮肤";
+"subcutaneous" = "皮下";
+"injected_below_skin" = "皮下注射";
+"intramuscular" = "肌肉";
+"injected_into_muscle" = "肌肉注射";
+"intravenous" = "静脉";
+"injected_into_vein" = "静脉注射";
+"smoked" = "吸烟";
+"heating_burning" = "加热/燃烧";
+"inhaled" = "吸入";
+"vapor_gas" = "蒸汽/气体";
+/* 长文本 - 耐受性图表 */
+"limitations_text" = "此图表显示从摄入时建立的完全耐受性降低到一半并最终降至零所需的时间。\n\n该图表假设每次摄入都会立即产生完全耐受性,作为基本参考。然而,对于许多物质来说,完全耐受性不会立即发生,而是随着长期和反复使用而逐渐建立。有关特定物质耐受性的更细致详情,请参阅PsychonautWiki上的相应文章。\n\n其他影响因素,如消耗的剂量和潜在的交叉耐受性,未被考虑在内。";
+"understanding_visualization_text" = "以不透明色调标记的阶段,紧接着消费后反映了对特定物质的耐受性升高。随后的较浅色调表示耐受性水平降低。接下来是恢复到零耐受性,需要进行类似于初次消费的剂量调整。\n\n\"开始日期\"表示考虑的最早摄入时间。\n\n垂直线标记当前时间。如果图表出现在体验中,灰色垂直线标记体验发生的时间。";
+
+/* 喷雾计算器 */
+"spray_calculator_title" = "喷雾计算器";
+"solute_weight_per_spray" = "每次喷雾的溶质重量";
+"weight_per_spray" = "每次喷雾重量";
+"units" = "单位";
+"spray_size" = "喷雾大小";
+"result" = "结果";
+"liquid_volume" = "液体体积";
+"solute_weight" = "溶质重量";
+"purity" = "纯度";
+"spray_calculator_desc" = "口服或鼻腔喷雾可用于容积给药物质。\n请注意,物质在盐形式下最稳定,溶解在液体中会更快降解,如果您计划储存数月或数年,这可能与您相关。\n不要使用自来水,因为它会变质,其中的氯会分解某些物质(例如LSD)。请使用蒸馏水。\n查找您想要溶解在水/乙醇中的物质的溶解度,以确保它能完全溶解。大多数(如果不是全部)盐形式的常见物质都具有足够的溶解度。\n为防止温度降解,请使用乙醇或水/乙醇混合物作为溶剂,使其可以放入冰箱而不会冻结。但是,不要在鼻腔喷雾中使用乙醇,因为这会损害鼻粘膜。\n用于鼻腔给药的粉末比液体具有更高的生物利用度,因为它们在鼻粘膜上的稳定性和停留时间更长。";
+
+/* 位置 */
+"search_location" = "搜索位置";
+"enable_location_access" = "在设置中启用位置访问权限,以自动将位置添加到您的体验中。";
+
+/* 更安全使用章节 */
+"research_text" = "提前研究该物质或物质组合可能产生的持续时间、主观效果和潜在不良反应。\n阅读此处的信息以及PsychonautWiki文章。最好与其他来源(Tripsit、Erowid、Wikipedia、Bluelight、Reddit等)进行交叉参考。\n不要着急。";
+"testing_text" = "使用匿名和免费的药物检测服务测试您的物质。如果您所在的国家/地区没有这些服务,请使用试剂检测试剂盒。不要相信您的经销商会出售可靠的产品。最好有经过测试的库存,而不是临时依赖来源。";
+"dosage_text" = "了解您的剂量,从小剂量开始并等待。饱腹可能会将吞服摄入的起效时间延迟数小时。对于有耐受性的人来说轻度的剂量可能对您来说太多了。\n\n投资购买毫克秤,以便您可以准确称量剂量。请记住,1000美元以下的毫克秤无法准确称量低于50毫克的剂量,在10-15毫克以下时非常不准确。如果药物量较小,请使用容积给药法(溶解在水或酒精中以便于测量)。\n\n许多物质没有线性剂量-反应曲线,这意味着剂量加倍会导致超过两倍的增加(并迅速导致压倒性的、不愉快的和潜在危险的体验),因此剂量应该只以小幅度向上调整(例如前一剂量的1/4到1/2)。";
+"set_text" = "确保您的想法、欲望、感受、总体情绪以及对即将体验的任何先入之见或期望都有利于体验。确保您的身体健康。如果您感到不适、受伤或总体不健康,最好不要服用。";
+"setting_text" = "不熟悉、无法控制或令人不快的社交或物理环境可能导致不愉快或危险的体验。选择一个提供安全感、熟悉感、控制感和舒适感的环境。对于使用致幻剂(迷幻剂、解离剂和谵妄剂),请参阅更安全的致幻剂指南。";
+"combinations_text" = "在没有研究组合的情况下,不要组合药物,包括酒精。与物质相关的死亡最常见的原因是抑制剂(如阿片类药物、苯二氮卓类药物或酒精)与其他抑制剂的组合。";
+"allergy_tests_text" = "只需服用极少量的物质(例如常规剂量的1/10到1/4),并等待几个小时以验证您没有表现出异常或特异性反应。";
+"reflection_text" = "仔细监测任何物质使用的频率和强度,以确保它不会滑向滥用和成瘾。特别是,许多兴奋剂、阿片类药物和抑制剂已知具有高度成瘾性。";
+"safety_of_others_text" = "在中毒时,不要驾驶、操作重型机械,或以其他方式直接或间接负责他人的安全或照顾。";
+"recovery_position_text" = "如果有人失去知觉但还在呼吸,请将他们置于恢复体位,以防止药物过量后因呕吐物窒息而死亡。\n准备好紧急情况下的求助服务联系方式。";
+
+/* 常见问题 */
+"faq_q1" = "为什么PsychonautWiki文章中存在的相互作用或其他物质信息在应用中没有?";
+"faq_a1" = "要么是文章中的信息注释不正确,要么是PsychonautWiki API没有正确解析信息,要么是应用没有从API正确导入信息。无论如何,请通过应用报告错误。";
+"faq_q2" = "应用何时显示相互作用警告?";
+"faq_a2" = "如果与不到2天前记录的物质存在相互作用,或者与以下任何物质存在相互作用:%@。";
+"faq_q3" = "如何更改或添加物质信息(持续时间、剂量、相互作用和效果)?";
+"faq_a3" = "通过编辑相应的PsychonautWiki文章。";
+"faq_q4" = "物质多久更新一次?";
+"faq_a4" = "在应用的每个新版本上。";
+"faq_q5" = "时间线是如何绘制的?";
+"faq_a5" = "来自PsychonautWiki的起效持续时间范围定义了曲线何时开始上升,上升期定义了上升持续多长时间,峰值定义了保持多长时间,下降期定义了需要多长时间才能回到基线。如果可能,峰值和下降期持续时间会根据剂量进行线性插值,否则它只选择范围的中间值。如果缺少某些持续时间,它会绘制虚线。例如,如果给出了起效和总时间,它会沿底部绘制起效线,然后绘制一条虚线曲线到总时间的结束。";
+"faq_q6" = "为什么时间线不将不同摄入的曲线累加在一起?";
+"faq_a6" = "不能将两条曲线相加,因为一次摄入可能会建立耐受性,影响另一次摄入的曲线。曲线只能根据通过PsychonautWiki可用的数据绘制。";
+

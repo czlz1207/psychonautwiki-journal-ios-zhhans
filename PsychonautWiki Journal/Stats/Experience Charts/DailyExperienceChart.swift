@@ -51,10 +51,10 @@ struct DailyExperienceChart: View {
     var body: some View {
         VStack(alignment: .leading) {
             VStack(alignment: .leading) {
-                Text("Total Experiences")
+                Text("total_experiences")
                     .font(.callout)
                     .foregroundStyle(.secondary)
-                Text("\(experienceData.last30DaysTotal, format: .number) Experiences")
+                Text("\(experienceData.last30DaysTotal, format: .number) \(Text("experiences"))")
                     .font(.title2.bold())
                     .foregroundColor(.primary)
             }.opacity(selectedElement == nil ? 1 : 0)

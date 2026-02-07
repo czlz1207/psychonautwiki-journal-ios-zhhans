@@ -25,20 +25,20 @@ struct ColorPickerScreen: View {
     var body: some View {
         List {
             if !otherColors.isEmpty {
-                Section("Unused Colors") {
+                Section("unused_colors") {
                     ForEach(otherColors) { color in
                         button(for: color)
                     }
                 }
             }
             if !alreadyUsedColors.isEmpty {
-                Section("Used Colors") {
+                Section("used_colors") {
                     ForEach(alreadyUsedColors) { color in
                         button(for: color)
                     }
                 }
             }
-        }.navigationTitle("Choose Color")
+        }.navigationTitle("choose_color")
     }
 
     private func button(for color: SubstanceColor) -> some View {

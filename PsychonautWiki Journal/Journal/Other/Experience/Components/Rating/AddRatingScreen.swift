@@ -29,7 +29,7 @@ struct AddRatingScreen: View {
         NavigationStack {
             screen.toolbar {
                 ToolbarItem(placement: .cancellationAction) {
-                    Button("Cancel") {
+                    Button("cancel") {
                         dismiss()
                     }
                 }
@@ -50,7 +50,7 @@ struct AddRatingScreen: View {
     var doneButton: some View {
         DoneButton {
             save()
-            toastViewModel.showSuccessToast(message: "Rating Added")
+            toastViewModel.showSuccessToast(message: NSLocalizedString("rating_added", comment: ""))
             dismiss()
         }
     }

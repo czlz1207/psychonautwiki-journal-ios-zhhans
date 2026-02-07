@@ -21,9 +21,9 @@ struct TimeRangePicker: View {
 
     var body: some View {
         Picker("Time Range", selection: $value.animation(.easeInOut)) {
-            Text("30 Days").tag(TimeRange.last30Days)
-            Text("12 Months").tag(TimeRange.last12Months)
-            Text("Years").tag(TimeRange.years)
+            Text("last_30_days").tag(TimeRange.last30Days)
+            Text("last_12_months").tag(TimeRange.last12Months)
+            Text("years").tag(TimeRange.years)
         }
         .pickerStyle(.segmented)
     }

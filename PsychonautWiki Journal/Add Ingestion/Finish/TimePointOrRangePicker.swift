@@ -23,9 +23,9 @@ struct TimePointOrRangePicker: View {
     @Binding var selectedEndTime: Date
 
     var body: some View {
-        Picker("Time picker option", selection: $selectedTimePickerOption.animation()) {
-            Text("Time point").tag(TimePickerOption.pointInTime)
-            Text("Time range").tag(TimePickerOption.timeRange)
+        Picker("time_picker_option", selection: $selectedTimePickerOption.animation()) {
+            Text("time_point").tag(TimePickerOption.pointInTime)
+            Text("time_range_option").tag(TimePickerOption.timeRange)
         }.pickerStyle(.segmented)
         .labelsHidden()
         .onChange(of: selectedTimePickerOption) { newValue in
@@ -37,7 +37,7 @@ struct TimePointOrRangePicker: View {
         case .pointInTime:
             HStack(alignment: .center) {
                 DatePicker(
-                    "Time",
+                    "time",
                     selection: $selectedTime,
                     displayedComponents: [.date, .hourAndMinute]
                 )
@@ -48,12 +48,12 @@ struct TimePointOrRangePicker: View {
                         selectedTime = Date.now
                     }
                 } label: {
-                    Label("Reset time", systemImage: "clock.arrow.circlepath").labelStyle(.iconOnly)
+                    Label("reset_time", systemImage: "clock.arrow.circlepath").labelStyle(.iconOnly)
                 }
             }
         case .timeRange:
             DatePicker(
-                "Start time",
+                "start_time",
                 selection: Binding(get: {
                     selectedTime
                 }, set: { newStart in
@@ -66,7 +66,7 @@ struct TimePointOrRangePicker: View {
             )
             .datePickerStyle(.compact)
             DatePicker(
-                "End time",
+                "end_time",
                 selection: Binding(get: {
                     selectedEndTime
                 }, set: { newEnd in

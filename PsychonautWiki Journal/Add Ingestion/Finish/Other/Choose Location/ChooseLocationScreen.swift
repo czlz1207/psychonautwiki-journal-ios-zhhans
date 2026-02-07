@@ -25,7 +25,7 @@ struct ChooseLocationScreen: View {
         NavigationStack {
             screen.toolbar {
                 ToolbarItem(placement: .cancellationAction) {
-                    Button("Cancel") {
+                    Button("cancel") {
                         dismiss()
                     }
                 }
@@ -63,13 +63,13 @@ struct ChooseLocationScreen: View {
         .searchable(
             text: $locationManager.searchText,
             placement: .navigationBarDrawer(displayMode: .always),
-            prompt: "Search Location"
+            prompt: LocalizedStringKey("search_location")
         )
         .disableAutocorrection(true)
         .scrollDismissesKeyboard(.interactively)
         .onSubmit(of: .search) {
             locationManager.searchLocations()
         }
-        .navigationTitle("Experience Location")
+        .navigationTitle("experience_location")
     }
 }

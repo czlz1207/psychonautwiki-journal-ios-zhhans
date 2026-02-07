@@ -48,7 +48,7 @@ struct PureSubstanceSuggestionView: View {
                                 estimatedDoseStandardDeviation: doseAndUnit.estimatedDoseStandardDeviation))
                         .buttonStyle(.bordered).fixedSize()
                     } else {
-                        NavigationLink("Unknown", value: FinishIngestionScreenArguments(
+                        NavigationLink("unknown", value: FinishIngestionScreenArguments(
                             substanceName: pureSubstanceSuggestions.substance.name,
                             administrationRoute: pureSubstanceSuggestions.route,
                             dose: doseAndUnit.dose,

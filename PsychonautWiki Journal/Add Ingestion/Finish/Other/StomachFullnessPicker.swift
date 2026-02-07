@@ -21,12 +21,12 @@ struct StomachFullnessPicker: View {
     @Binding var stomachFullness: StomachFullness
 
     var body: some View {
-        Picker("Stomach", selection: $stomachFullness) {
+        Picker("stomach", selection: $stomachFullness) {
             ForEach(StomachFullness.allCases) { option in
                 HStack {
                     Text(option.text)
                     Spacer()
-                    Text("~\(option.onsetDelayForOralInHours.asRoundedReadableString) hours delay").foregroundColor(.secondary)
+                    Text("~\(option.onsetDelayForOralInHours.asRoundedReadableString) \(NSLocalizedString("hours_delay", comment: ""))").foregroundColor(.secondary)
                 }
             }
         }

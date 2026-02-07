@@ -59,12 +59,12 @@ struct SprayCalculatorScreenContent: View {
 
     var body: some View {
         List {
-            Section("Solute weight per spray") {
+            Section(LocalizedStringKey("solute_weight_per_spray")) {
                 HStack {
-                    TextField("Weight per Spray", text: $weightPerSpray)
+                    TextField(LocalizedStringKey("weight_per_spray"), text: $weightPerSpray)
                         .font(.title)
                         .keyboardType(.decimalPad)
-                    Picker("Units", selection: $units) {
+                    Picker(LocalizedStringKey("units"), selection: $units) {
                         ForEach(WeightUnit.allCases, id: \.self) { option in
                             Text(option.rawValue).font(.title)
                         }
@@ -94,29 +94,29 @@ struct SprayCalculatorScreenContent: View {
 
             } header: {
                 HStack {
-                    Text("Spray Size")
+                    Text(LocalizedStringKey("spray_size"))
                     Spacer()
                     if !sprayModels.isEmpty {
                         EditButton()
                     }
                 }
             }
-            Section("Result") {
+            Section(LocalizedStringKey("result")) {
                 VStack(alignment: .leading, spacing: 8) {
                     HStack {
-                        TextField("Liquid Volume", text: $liquidAmountInMl)
+                        TextField(LocalizedStringKey("liquid_volume"), text: $liquidAmountInMl)
                             .keyboardType(.decimalPad)
                         Text("ml")
                     }.font(.title)
                     Image(systemName: "arrow.up.arrow.down")
                     HStack {
-                        TextField("Solute Weight", text: $totalWeight)
+                        TextField(LocalizedStringKey("solute_weight"), text: $totalWeight)
                             .keyboardType(.decimalPad)
                         Text(units.rawValue)
                     }.font(.title)
                     HStack {
                         Image(systemName: "arrow.down")
-                        TextField("Purity", text: $purityInPercent)
+                        TextField(LocalizedStringKey("purity"), text: $purityInPercent)
                             .keyboardType(.decimalPad)
                         Text("%")
                     }
@@ -126,23 +126,16 @@ struct SprayCalculatorScreenContent: View {
                 }
             }
             Section {
-                Text("""
-                Oral or nasal sprays can be used for dosing substances volumetrically.
-                Note that substances are the most stable in their salt form and degrade more quickly if dissolved in liquid, which might be relevant to you if you plan on storing it for months or years.
-                Don't use tap water because it can become stale and the chlorine inside it breaks down some substances (e.g. LSD). Use distilled water instead.
-                Look up the solubility of the substance you want to dissolve in water/ethanol to make sure it will dissolve fully. Most if not all common substances in their salt form are more than soluble enough.
-                To prevent degradation by temperature use ethanol or a water/ethanol mix as the solvent such that it can be put in the freezer without freezing. However don't use ethanol for nasal sprays as this can damage the nasal mucosa.
-                Powders for nasal delivery have higher bioavailiability than liquids because of increased stability and residence time on nasal mucosa.
-                """)
+                Text(LocalizedStringKey("spray_calculator_desc"))
             }
         }
         .scrollDismissesKeyboard(.interactively)
-        .navigationTitle("Spray Calculator")
+        .navigationTitle(LocalizedStringKey("spray_calculator_title"))
     }
 
     private var addSprayButton: some View {
         Button(action: addSpray) {
-            Label("Add Spray", systemImage: "plus")
+            Label("add_spray", systemImage: "plus")
         }
     }
 }

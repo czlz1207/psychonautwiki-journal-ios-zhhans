@@ -20,7 +20,7 @@ struct DoneButton: View {
     let action: () -> Void
 
     var body: some View {
-        Button("Done") {
+        Button("done") {
             action()
         }.font(.headline)
     }

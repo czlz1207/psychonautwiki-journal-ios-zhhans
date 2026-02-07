@@ -26,7 +26,7 @@ struct RatingScreenContent: View {
         Form {
             Section {
                 if canDefineOverall {
-                    Toggle("Overall Rating", isOn: $isOverallRating.animation()).tint(.accentColor)
+                    Toggle("overall_rating", isOn: $isOverallRating.animation()).tint(.accentColor)
                 }
                 if !isOverallRating {
                     DatePicker(

@@ -38,21 +38,21 @@ struct AddToleranceIngestionScreen: View {
                         Text(substance.name)
                             .font(.headline)
                         Spacer()
-                        Text("No tolerance info")
+                        Text("no_tolerance_info")
                     }.foregroundColor(.secondary)
                 }
             }
             .listStyle(.plain)
             .toolbar {
                 ToolbarItem(placement: .cancellationAction) {
-                    Button("Cancel") {
+                    Button("cancel") {
                         dismiss()
                     }
                 }
             }
-            .navigationTitle("Add Temp. Ingestion")
+            .navigationTitle(NSLocalizedString("add_temp_ingestion", comment: ""))
             .scrollDismissesKeyboard(.interactively)
-            .searchable(text: $viewModel.searchText, prompt: "Search substance")
+            .searchable(text: $viewModel.searchText, prompt: Text("search_substance"))
             .disableAutocorrection(true)
         }
     }

@@ -23,7 +23,7 @@ struct ChooseOtherRouteScreen: View {
     var body: some View {
         screen.toolbar {
             ToolbarItem(placement: .cancellationAction) {
-                Button("Cancel") {
+                Button("cancel") {
                     dismiss()
                 }
             }
@@ -46,7 +46,7 @@ struct ChooseOtherRouteScreen: View {
             }
         }
         .padding(.horizontal)
-        .navigationBarTitle("Other Routes")
+        .navigationBarTitle("other_routes")
     }
 
     private func getRouteBoxWithNavigation(route: AdministrationRoute) -> some View {

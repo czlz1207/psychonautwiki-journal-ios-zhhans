@@ -34,7 +34,7 @@ struct ToleranceTextsScreen: View {
                     }
                     let crossTolerances = substance.crossTolerances.joined(separator: ", ")
                     if !crossTolerances.isEmpty {
-                        Text("Cross tolerance with \(crossTolerances)")
+                        Text("\(Text("cross_tolerance_with")) \(crossTolerances)")
                     }
                 } header: {
                     HStack {
@@ -44,10 +44,10 @@ struct ToleranceTextsScreen: View {
                 }
             }
         }
-        .navigationTitle("Tolerances")
+        .navigationTitle("tolerances")
         .toolbar {
             NavigationLink(value: GlobalNavigationDestination.toleranceChartExplanation) {
-                Label("Chart Limitations", systemImage: "info.circle")
+                Label("chart_limitations", systemImage: "info.circle")
                     .labelStyle(.titleOnly)
             }
         }

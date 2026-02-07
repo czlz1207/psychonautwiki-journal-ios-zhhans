@@ -38,7 +38,7 @@ struct EditRatingScreen: View {
             SelectRatingSection(selectedRating: $selectedRating)
             RatingExplanationSection()
             Section {
-                Toggle("Hide in timeline", isOn: $isHidden).tint(.accentColor)
+                Toggle("hide_in_timeline", isOn: $isHidden).tint(.accentColor)
                 Button(action: delete) {
                     Label("Delete Rating", systemImage: "trash").foregroundColor(.red)
                 }
@@ -49,17 +49,17 @@ struct EditRatingScreen: View {
         }
         .toolbar {
             ToolbarItem(placement: .cancellationAction) {
-                Button("Cancel") {
+                Button("cancel") {
                     dismiss()
                 }
             }
             ToolbarItem(placement: .confirmationAction) {
-                Button("Save") {
+                Button("save") {
                     save()
                 }
             }
         }
-        .navigationTitle("Edit Rating")
+        .navigationTitle("edit_rating")
     }
 
     func save() {

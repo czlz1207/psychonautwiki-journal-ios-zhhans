@@ -62,7 +62,7 @@ struct CustomUnitsChooseDoseScreen: View {
             }
             if isEyeOpen {
                 Section {
-                    Button("Add new custom unit") {
+                    Button("add_new_custom_unit") {
                         isAddCustomUnitSheetShown = true
                     }
                 }
@@ -76,7 +76,7 @@ struct CustomUnitsChooseDoseScreen: View {
                             "Depending on your smoking/inhalation method different amounts of substance are lost before entering the body. The dose should reflect the amount of substance that is actually inhaled.")
                     }
                     if customUnit.roaDose?.shouldUseVolumetricDosing ?? false {
-                        NavigationLink("Volumetric Dosing Recommended") {
+                        NavigationLink("volumetric_dosing_recommended") {
                             VolumetricDosingScreen()
                         }
                     }
@@ -85,7 +85,7 @@ struct CustomUnitsChooseDoseScreen: View {
         }
         .toolbar {
             ToolbarItem(placement: .cancellationAction) {
-                Button("Cancel") {
+                Button("cancel") {
                     dismiss()
                 }
             }

@@ -39,7 +39,7 @@ struct ToleranceChart: View {
     var body: some View {
         Group {
             if toleranceWindows.isEmpty {
-                Text("No ingestions with tolerance info")
+                Text("no_ingestions_with_tolerance")
                     .foregroundColor(.secondary)
             } else {
                 TimelineView(.everyMinute) { context in

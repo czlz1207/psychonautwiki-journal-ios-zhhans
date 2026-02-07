@@ -161,7 +161,7 @@ struct FinishCustomUnitsScreen: View {
             }
             let areUnitsDefined = roaDose?.units != nil
             if case .substance = arguments, !areUnitsDefined  {
-                Section("Original Unit") {
+                Section("original_unit") {
                     UnitsPicker(units: $originalUnit)
                         .padding(.bottom, 10)
                 }
@@ -179,7 +179,7 @@ struct FinishCustomUnitsScreen: View {
                     Spacer()
                     Text(originalUnit)
                 }
-                Toggle("Estimate", isOn: $isEstimate.animation())
+                Toggle("estimate", isOn: $isEstimate.animation())
                     .tint(.accentColor)
                     .onChange(of: isEstimate, perform: { newIsEstimate in
                         if newIsEstimate {
@@ -205,7 +205,7 @@ struct FinishCustomUnitsScreen: View {
             }.listRowSeparator(.hidden)
             let isUnknownDosePerUnit = dosePerUnit == nil
             if let originalUnit = roaDose?.units, !unit.isEmpty {
-                Section("Ingestion Preview") {
+                Section("ingestion_preview") {
                     IngestionRowPreview(
                         substanceName: substanceName,
                         administrationRoute: arguments.administrationRoute,
@@ -220,7 +220,7 @@ struct FinishCustomUnitsScreen: View {
                         name: name)
                 }
                 if !isUnknownDosePerUnit {
-                    Section("Dose Picker Preview") {
+                    Section("dose_picker_preview") {
                         VStack(alignment: .leading, spacing: 5) {
                             if !name.isEmpty {
                                 Text(name).font(.headline)
@@ -233,7 +233,7 @@ struct FinishCustomUnitsScreen: View {
                 }
             }
         }
-        .navigationTitle("Add Custom Unit")
+        .navigationTitle("add_custom_unit")
         .onAppear {
             focusedField = .name
             switch arguments {
@@ -246,7 +246,7 @@ struct FinishCustomUnitsScreen: View {
         .scrollDismissesKeyboard(.interactively)
         .toolbar {
             ToolbarItem(placement: .cancellationAction) {
-                Button("Cancel", action: cancel)
+                Button(LocalizedStringKey("cancel"), action: cancel)
             }
             ToolbarItem(placement: .primaryAction) {
                 DoneButton(action: onDoneTap)

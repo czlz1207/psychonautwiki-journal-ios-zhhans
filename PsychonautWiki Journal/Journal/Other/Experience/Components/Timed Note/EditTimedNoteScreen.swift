@@ -55,17 +55,17 @@ struct EditTimedNoteScreen: View {
                     }
                 }
                 ToolbarItem(placement: .cancellationAction) {
-                    Button("Cancel") {
+                    Button("cancel") {
                         dismiss()
                     }
                 }
                 ToolbarItem(placement: .confirmationAction) {
-                    Button("Save") {
+                    Button("save") {
                         save()
                     }
                 }
             }
-            .navigationTitle("Edit Note")
+            .navigationTitle("edit_note")
         }
     }
 

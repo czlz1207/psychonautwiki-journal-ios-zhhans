@@ -31,13 +31,13 @@ struct LiveActivityButton: View {
                     Button {
                         stopLiveActivity()
                     } label: {
-                        Label("Stop Live Activity", systemImage: "stop")
+                        Label("stop_live_activity", systemImage: "stop")
                     }
                 } else {
                     Button {
                         startLiveActivity()
                     } label: {
-                        Label("Start Live Activity", systemImage: "play")
+                        Label("start_live_activity_button", systemImage: "play")
                     }
                 }
             } else if UIDevice.current.userInterfaceIdiom == .phone {

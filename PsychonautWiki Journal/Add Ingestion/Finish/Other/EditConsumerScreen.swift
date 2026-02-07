@@ -62,7 +62,7 @@ private struct EditConsumerScreenContent: View {
         NavigationStack {
             Form {
                 Section {
-                    TextField("Consumer name", text: $consumerName, prompt: Text("Enter name"))
+                    TextField(LocalizedStringKey("consumer_name"), text: $consumerName, prompt: Text("enter_name"))
                         .autocapitalization(.words)
                         .autocorrectionDisabled()
                 }
@@ -72,7 +72,7 @@ private struct EditConsumerScreenContent: View {
                             consumerName = ""
                             dismiss()
                         } label: {
-                            Label("You", systemImage: "person")
+                            Label("you", systemImage: "person")
                         }
                     }
 
@@ -93,7 +93,7 @@ private struct EditConsumerScreenContent: View {
                     }
                 }
             }
-            .navigationTitle("Edit Consumer")
+            .navigationTitle("edit_consumer")
         }
     }
 }

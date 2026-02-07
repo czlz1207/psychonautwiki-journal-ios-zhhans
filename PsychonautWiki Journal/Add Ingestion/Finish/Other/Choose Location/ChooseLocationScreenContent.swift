@@ -42,7 +42,7 @@ struct ChooseLocationScreenContent: View {
                 } else {
                     Section {
                         if searchSuggestedLocations.isEmpty {
-                            Text("No Results")
+                            Text("no_results")
                         } else {
                             ForEach(searchSuggestedLocations) { location in
                                 Button {
@@ -59,8 +59,8 @@ struct ChooseLocationScreenContent: View {
                     }
                 }
             } else {
-                Section("Selected Location") {
-                    TextField("Name", text: $selectedLocationName, prompt: Text("Enter Name"))
+                Section("selected_location") {
+                    TextField("name", text: $selectedLocationName, prompt: Text("enter_name"))
                         .onChange(of: selectedLocationName) { name in
                             withAnimation {
                                 if !name.isEmpty {
@@ -105,7 +105,7 @@ struct ChooseLocationScreenContent: View {
                                 .padding(8)
                                 .contentShape(Circle())
                             }
-                            .accessibilityLabel(Text("Delete Coordinates"))
+                            .accessibilityLabel(Text("delete_coordinates"))
                         }
                         .listRowInsets(EdgeInsets())
                     }
@@ -114,12 +114,12 @@ struct ChooseLocationScreenContent: View {
                             selectedLocationName = ""
                             selectedLocation = nil
                         } label: {
-                            Label("Delete Location", systemImage: "trash").foregroundColor(.red)
+                            Label("delete_location", systemImage: "trash").foregroundColor(.red)
                         }
                     }
                 }
                 if !experienceLocations.isEmpty || currentLocation != nil {
-                    Section("Suggestions") {
+                    Section("suggestions") {
                         if let currentLocation {
                             Button {
                                 withAnimation {
@@ -127,7 +127,7 @@ struct ChooseLocationScreenContent: View {
                                     selectedLocationName = currentLocation.name
                                 }
                             } label: {
-                                Label("Current Location", systemImage: "location")
+                                Label("current_location", systemImage: "location")
                             }
                         }
                         ForEach(experienceLocations) { location in
@@ -151,10 +151,10 @@ struct ChooseLocationScreenContent: View {
                                 await UIApplication.shared.open(url)
                             }
                         } label: {
-                            Label("Enable Location Access", systemImage: "gearshape")
+                            Label("enable_location_access", systemImage: "gearshape")
                         }
                     } footer: {
-                        Text("Enable location access in settings to add locations to your experiences automatically.")
+                        Text(LocalizedStringKey("enable_location_access"))
                     }
                 }
             }

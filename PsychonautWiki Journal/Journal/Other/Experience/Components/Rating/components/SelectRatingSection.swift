@@ -21,7 +21,7 @@ struct SelectRatingSection: View {
 
     var body: some View {
         Section("Shulgin Rating") {
-            Picker("Shulgin Rating", selection: $selectedRating) {
+            Picker("shulgin_rating", selection: $selectedRating) {
                 ForEach(ShulginRatingOption.allCases, id: \.self) { option in
                     HStack {
                         Text(option.stringRepresentation).font(.title3)

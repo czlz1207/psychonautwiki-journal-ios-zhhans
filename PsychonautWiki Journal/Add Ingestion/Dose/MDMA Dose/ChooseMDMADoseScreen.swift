@@ -34,7 +34,7 @@ struct ChooseMDMADoseScreen: View {
     var body: some View {
         screen.toolbar {
             ToolbarItem(placement: .cancellationAction) {
-                Button("Cancel") {
+                Button("cancel") {
                     dismiss()
                 }
             }
@@ -58,7 +58,7 @@ struct ChooseMDMADoseScreen: View {
     }
 
     private var unknownDoseLink: some View {
-        NavigationLink("Use Unknown Dose", value: FinishIngestionScreenArguments(
+        NavigationLink("use_unknown_dose", value: FinishIngestionScreenArguments(
             substanceName: mdma.name,
             administrationRoute: .oral,
             dose: nil,
@@ -72,13 +72,13 @@ struct ChooseMDMADoseScreen: View {
 
     private var screen: some View {
         Form {
-            Section("Max Dose Calculator") {
+            Section("max_dose_calculator") {
                 MDMAMaxDoseCalculator { newMaxDose in
                     mdmaDoseInMg = newMaxDose
                     doseText = newMaxDose.asRoundedReadableString
                 }
             }
-            Section("Choose Dose") {
+            Section("choose_dose") {
                 VStack(alignment: .leading, spacing: 5) {
                     RoaDoseRow(roaDose: oralDose)
                     DynamicDoseRangeView(roaDose: oralDose, dose: mdmaDoseInMg)
@@ -93,7 +93,7 @@ struct ChooseMDMADoseScreen: View {
                         mdmaDoseInMg = getDouble(from: text)
                     }
                 }
-                Toggle("Estimate", isOn: $isEstimate)
+                Toggle("estimate", isOn: $isEstimate)
                     .tint(.accentColor)
                     .onChange(of: isEstimate, perform: { newIsEstimate in
                         if newIsEstimate {
@@ -116,8 +116,8 @@ struct ChooseMDMADoseScreen: View {
                 }
                 unknownDoseLink
             }.listRowSeparator(.hidden)
-            Section("Prefer to log pill?") {
-                Button("Add a custom unit") {
+            Section("prefer_to_log_pill") {
+                Button("add_a_custom_unit") {
                     isAddCustomUnitSheetShown.toggle()
                 }
             }
@@ -138,7 +138,7 @@ struct ChooseMDMADoseScreen: View {
             }
         })
         .scrollDismissesKeyboard(.interactively)
-        .navigationTitle("MDMA Dose")
+        .navigationTitle("mdma_dose")
     }
 
     var doseType: DoseRangeType {

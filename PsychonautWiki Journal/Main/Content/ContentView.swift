@@ -89,7 +89,7 @@ struct ContentScreen: View {
                         }
                     }
                     .tabItem {
-                        Label("Substances", systemImage: "pills")
+                        Label("substances", systemImage: "pills")
                     }
                     .tag(Tab.substances)
 
@@ -100,7 +100,7 @@ struct ContentScreen: View {
                             }
                     }
                     .tabItem {
-                        Label("Safer", systemImage: "cross.case")
+                        Label("safer", systemImage: "cross.case")
                     }
                     .tag(Tab.safer)
 
@@ -157,7 +157,7 @@ struct ContentScreen: View {
                 }
         }
         .tabItem {
-            Label("Stats", systemImage: "chart.bar")
+            Label("stats", systemImage: "chart.bar")
         }
         .tag(Tab.stats)
     }
@@ -173,7 +173,7 @@ struct ContentScreen: View {
             }
         }
         .tabItem {
-            Label("Journal", systemImage: "book")
+            Label("journal", systemImage: "book")
         }
         .tag(Tab.journal)
     }
@@ -186,7 +186,7 @@ struct ContentScreen: View {
                 }
         }
         .tabItem {
-            Label("Settings", systemImage: "gearshape")
+            Label("settings", systemImage: "gearshape")
         }
         .tag(Tab.settings)
     }

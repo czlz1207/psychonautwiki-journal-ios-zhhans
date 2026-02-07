@@ -24,7 +24,7 @@ struct ExperiencePickerScreen: View {
 
     var body: some View {
         List {
-            Section("Create New") {
+            Section("create_new") {
                 Button {
                     selectedExperience = nil
                     wantsToForceNewExperience = true
@@ -42,7 +42,7 @@ struct ExperiencePickerScreen: View {
                     }
                 }
             }
-            Section("Close Experiences") {
+            Section("close_experiences") {
                 ForEach(experiences) { exp in
                     Button {
                         selectedExperience = exp
@@ -61,6 +61,6 @@ struct ExperiencePickerScreen: View {
                     }
                 }
             }
-        }.navigationTitle("Choose Experience")
+        }.navigationTitle("choose_experience")
     }
 }

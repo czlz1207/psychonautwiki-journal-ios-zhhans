@@ -53,10 +53,10 @@ struct MonthlyExperienceChart: View {
     var body: some View {
         VStack(alignment: .leading) {
             VStack(alignment: .leading) {
-                Text("Total Experiences")
+                Text("total_experiences")
                     .font(.callout)
                     .foregroundStyle(.secondary)
-                Text("\(experienceData.last12MonthsTotal, format: .number) Experiences")
+                Text("\(Int(experienceData.last12MonthsTotal)) \(Text("experiences"))")
                     .font(.title2.bold())
                     .foregroundColor(.primary)
             }.opacity(selectedElement == nil ? 1 : 0)

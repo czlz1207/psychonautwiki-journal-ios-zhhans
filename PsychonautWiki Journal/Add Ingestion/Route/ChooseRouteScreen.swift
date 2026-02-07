@@ -23,7 +23,7 @@ struct ChooseRouteScreen: View {
     var body: some View {
         screen.toolbar {
             ToolbarItem(placement: .cancellationAction) {
-                Button("Cancel") {
+                Button("cancel") {
                     dismiss()
                 }
             }
@@ -45,7 +45,7 @@ struct ChooseRouteScreen: View {
                         NavigationLink(value: ChooseOtherRouteScreenArguments(substance: substance,
                                                                               otherRoutes: otherRoutes)) {
                             GroupBox {
-                                Text("Other Routes")
+                                Text("other_routes")
                                     .font(.headline)
                                     .frame(
                                         minWidth: 0,
@@ -60,7 +60,7 @@ struct ChooseRouteScreen: View {
                 }
             }
             NavigationLink(value: AddIngestionDestination.saferRoutes) {
-                Label("Safer Routes", systemImage: "info.circle")
+                Label("safer_routes", systemImage: "info.circle")
             }
             .padding(.vertical)
         }

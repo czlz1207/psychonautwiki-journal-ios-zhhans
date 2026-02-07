@@ -40,10 +40,10 @@ struct ExperienceOverview: View {
 
     var body: some View {
         VStack(alignment: .leading) {
-            Text("Total Experiences Last 12 Months")
+            Text("total_experiences_last_12_months")
                 .font(.callout)
                 .foregroundStyle(.secondary)
-            Text("\(experienceData.last12MonthsTotal, format: .number) Experiences")
+            Text("\(Int(experienceData.last12MonthsTotal)) ") + Text("experiences")
                 .font(.title2.bold())
             ExperienceOverviewChart(experienceData: experienceData)
                 .frame(height: 100)

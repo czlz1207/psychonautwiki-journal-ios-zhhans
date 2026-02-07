@@ -44,9 +44,9 @@ struct JournalScreen: View {
             .scrollDismissesKeyboard(.interactively)
             .modify {
                 if #available(iOS 17.0, *) {
-                    $0.searchable(text: $searchText, isPresented: $isSearchPresented, prompt: "Search experiences")
+                    $0.searchable(text: $searchText, isPresented: $isSearchPresented, prompt: Text("search_experiences"))
                 } else {
-                    $0.searchable(text: $searchText, prompt: "Search experiences")
+                    $0.searchable(text: $searchText, prompt: Text("search_experiences"))
                 }
             }
             .disableAutocorrection(true)
@@ -85,7 +85,7 @@ struct JournalScreen: View {
                 }
             }
         }
-        .navigationTitle("Journal")
+        .navigationTitle("journal")
     }
 
     private var favoriteButton: some View {

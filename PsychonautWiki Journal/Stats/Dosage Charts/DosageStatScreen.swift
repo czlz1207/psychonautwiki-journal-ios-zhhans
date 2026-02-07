@@ -63,7 +63,7 @@ struct DosageStatScreen: View {
         List {
             if doAllIngestionsHaveSameUnitEqualToSubstance {
                 Section {
-                    Picker("Time range", selection: $selectedTimeRangeOption) {
+                    Picker("time_range", selection: $selectedTimeRangeOption) {
                         ForEach(StatTimeRangeOption.allCases, id: \.rawValue) { timeRange in
                             Text(timeRange.rawValue).tag(timeRange)
                         }
@@ -106,14 +106,14 @@ struct DosageStatScreen: View {
                 }.listRowSeparator(.hidden)
 
                 Section {
-                    Toggle("Show Average", isOn: $isAverageShown).tint(.accentColor)
+                    Toggle("show_average", isOn: $isAverageShown).tint(.accentColor)
                 }
 
                 if areThereUnknownDoses {
-                    Section("Estimate unknown doses as") {
+                    Section("estimate_unknown_doses_as") {
                         HStack  {
                             TextField(
-                                "Unknown dose estimate",
+                                "unknown_dose_estimate",
                                 value: $unknownDoseEstimate,
                                 format: .number).keyboardType(.decimalPad)
                             Text(unit)

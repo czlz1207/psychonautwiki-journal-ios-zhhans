@@ -54,7 +54,7 @@ struct ChooseSubstanceContent: View {
         NavigationStack(path: $navPath) {
             screen.toolbar {
                 ToolbarItem(placement: .cancellationAction) {
-                    Button("Cancel") {
+                    Button("cancel") {
                         dismiss()
                     }
                 }
@@ -149,7 +149,7 @@ struct ChooseSubstanceContent: View {
                 Button {
                     isShowingAddCustomSheet.toggle()
                 } label: {
-                    Label("New Custom Substance", systemImage: "plus.circle.fill").labelStyle(.titleAndIcon).font(.headline)
+                    Label("new_custom_substance", systemImage: "plus.circle.fill").labelStyle(.titleAndIcon).font(.headline)
                 }.padding(.horizontal)
                     .sheet(isPresented: $isShowingAddCustomSheet) {
                         AddCustomSubstanceView(searchText: searchText) { customChooseRouteScreenArguments in
@@ -161,6 +161,6 @@ struct ChooseSubstanceContent: View {
         .scrollDismissesKeyboard(.interactively)
         .searchable(text: $searchText, placement: .navigationBarDrawer(displayMode: .always))
         .disableAutocorrection(true)
-        .navigationBarTitle("New Ingestion")
+        .navigationBarTitle("new_ingestion")
     }
 }

@@ -146,24 +146,24 @@ extension SettingsScreen {
                     newCustom.explanation = customCodable.description
                 }
                 try context.save()
-                showSuccessToast(message: "Import Successful")
+                showSuccessToast(message: NSLocalizedString("import_successful", comment: ""))
             } catch let DecodingError.keyNotFound(key, context) {
-                showErrorToast(message: "Import Failed")
+                showErrorToast(message: NSLocalizedString("import_failed", comment: ""))
                 print("Missing key '\(key.stringValue)' not found – \(context.debugDescription) at \(context.codingPath)")
             } catch let DecodingError.typeMismatch(_, context) {
-                showErrorToast(message: "Import Failed")
+                showErrorToast(message: NSLocalizedString("import_failed", comment: ""))
                 print("Type mismatch – \(context.debugDescription)")
             } catch let DecodingError.valueNotFound(type, context) {
                 let error = "Missing \(type) value – \(context.debugDescription) - codingPath: \(context.codingPath)"
                 print(error)
-                showErrorToast(message: "Import Failed")
+                showErrorToast(message: NSLocalizedString("import_failed", comment: ""))
             } catch let DecodingError.dataCorrupted(context) {
-                showErrorToast(message: "Import Failed")
+                showErrorToast(message: NSLocalizedString("import_failed", comment: ""))
                 print("Data corrupted – \(context.debugDescription)")
             } catch {
                 let desc = error.localizedDescription
                 print("Some other error – \(desc)")
-                showErrorToast(message: "Import Failed")
+                showErrorToast(message: NSLocalizedString("import_failed", comment: ""))
             }
         }
         // swiftlint:enable cyclomatic_complexity function_body_length
@@ -171,9 +171,9 @@ extension SettingsScreen {
         func deleteEverything() {
             do {
                 try PersistenceController.shared.deleteEverything()
-                showSuccessToast(message: "Delete Successful")
+                showSuccessToast(message: NSLocalizedString("delete_successful", comment: ""))
             } catch {
-                showErrorToast(message: "Delete Failed")
+                showErrorToast(message: NSLocalizedString("delete_failed", comment: ""))
             }
         }
 

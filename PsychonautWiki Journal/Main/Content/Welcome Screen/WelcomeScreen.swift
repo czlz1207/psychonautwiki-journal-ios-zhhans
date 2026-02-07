@@ -34,7 +34,7 @@ struct WelcomeScreen: View {
                     .padding(.leading, 10)
                     .onTapGesture(count: 3, perform: toggleEye)
                 VStack(spacing: 20) {
-                    (Text("Welcome to ") + Text("PsychonautWiki Journal").foregroundColor(.accentColor))
+                    (Text(LocalizedStringKey("welcome_to")) + Text(LocalizedStringKey("psychonautwiki_journal")).foregroundColor(.accentColor))
                         .multilineTextAlignment(.center)
                         .font(.largeTitle.bold())
 
@@ -59,13 +59,13 @@ struct WelcomeScreen: View {
                     }
                 }
             }
-            Text("Your data is kept offline at all times")
+            Text("your_data_offline")
                 .font(.footnote)
                 .foregroundColor(.secondary)
             Button(action: {
                 isShowingWelcome.toggle()
             }, label: {
-                Text("I understand")
+                Text("i_understand")
                     .font(.headline)
                     .frame(maxWidth: .infinity)
             })
@@ -82,18 +82,18 @@ struct WelcomeScreen: View {
 
     let features = [
         Feature(
-            title: "Risk & Reliability",
-            description: "Any reliance you place on PsychonautWiki Journal is strictly at your own risk. The developer is not liable.",
+            title: NSLocalizedString("risk_reliability", comment: ""),
+            description: NSLocalizedString("risk_reliability_desc", comment: ""),
             image: "brain.head.profile"
         ),
         Feature(
-            title: "Third Party Resources",
-            description: "All data in the app should be verified with other sources for accuracy.",
+            title: NSLocalizedString("third_party_resources", comment: ""),
+            description: NSLocalizedString("third_party_resources_desc", comment: ""),
             image: "person.2.wave.2"
         ),
         Feature(
-            title: "Consult a Doctor",
-            description: "Consult a doctor before making medical decisions.",
+            title: NSLocalizedString("consult_doctor", comment: ""),
+            description: NSLocalizedString("consult_doctor_desc", comment: ""),
             image: "heart.text.square"
         ),
     ]

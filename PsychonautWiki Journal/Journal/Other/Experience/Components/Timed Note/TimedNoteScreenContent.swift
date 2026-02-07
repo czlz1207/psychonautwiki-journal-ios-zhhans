@@ -41,7 +41,7 @@ struct TimedNoteScreenContent: View {
                 )
                 .labelsHidden()
                 .datePickerStyle(.wheel)
-                Toggle("Is part of timeline", isOn: $isPartOfTimeline).tint(.accentColor)
+                Toggle("is_part_of_timeline", isOn: $isPartOfTimeline).tint(.accentColor)
             }
             Section {
                 NavigationLink {

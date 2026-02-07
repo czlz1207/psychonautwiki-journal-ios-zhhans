@@ -61,10 +61,10 @@ struct AddCustomSubstanceView: View {
             .onAppear(perform: {
                 viewModel.name = searchText
             })
-            .navigationTitle("Create Custom")
+            .navigationTitle("create_custom")
             .toolbar {
                 ToolbarItem(placement: .cancellationAction) {
-                    Button("Cancel") {
+                    Button("cancel") {
                         dismiss()
                     }
                 }

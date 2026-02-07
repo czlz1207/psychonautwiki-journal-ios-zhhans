@@ -70,13 +70,13 @@ struct ExperienceToolbarContent: View {
                     Button {
                         sheetToShow = .addLocation
                     } label: {
-                        Label("Add Location", systemImage: "plus")
+                        Label("add_location", systemImage: "plus")
                     }
                 }
                 Button(role: .destructive) {
                     isShowingDeleteConfirmation.toggle()
                 } label: {
-                    Label("Delete Experience", systemImage: "trash")
+                    Label("delete_experience", systemImage: "trash")
                 }
             } label: {
                 Label("Edit", systemImage: "pencil")
@@ -91,15 +91,15 @@ struct ExperienceToolbarContent: View {
                     Button {
                         sheetToShow = .addRating
                     } label: {
-                        Label("Add Rating", systemImage: "plus.forwardslash.minus")
+                        Label("add_rating", systemImage: "plus.forwardslash.minus")
                     }
                     Button {
                         sheetToShow = .addTimedNote
                     } label: {
-                        Label("Add Timed Note", systemImage: "note.text")
+                        Label("add_timed_note", systemImage: "note.text")
                     }
                 } label: {
-                    Label("Add", systemImage: "plus")
+                    Label("add", systemImage: "plus")
                 }
             }
         }

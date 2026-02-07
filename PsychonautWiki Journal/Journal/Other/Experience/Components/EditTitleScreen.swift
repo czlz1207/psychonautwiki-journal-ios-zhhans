@@ -62,10 +62,10 @@ struct EditTitleScreenContent: View {
                     .autocorrectionDisabled()
             }
             .scrollDismissesKeyboard(.interactively)
-            .navigationTitle("Edit Title")
+            .navigationTitle("edit_title")
             .toolbar {
                 ToolbarItem(placement: .cancellationAction) {
-                    Button("Cancel") {
+                    Button("cancel") {
                         dismiss()
                     }
                 }

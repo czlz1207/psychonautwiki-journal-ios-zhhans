@@ -35,7 +35,7 @@ struct AcknowledgeInteractionsContent: View {
     var body: some View {
         screen.toolbar {
             ToolbarItem(placement: .cancellationAction) {
-                Button("Cancel") {
+                Button("cancel") {
                     dismiss()
                 }
             }
@@ -53,7 +53,7 @@ struct AcknowledgeInteractionsContent: View {
                     substance: substance
                 )
             } else {
-                Text("There are no documented interactions")
+                Text("no_documented_interactions")
             }
         }
         .navigationBarTitle(substance.name + " Interactions")

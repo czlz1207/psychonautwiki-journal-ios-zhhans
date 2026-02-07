@@ -52,7 +52,7 @@ struct ExperienceTitleScreen: View {
                 .autocorrectionDisabled()
         }
         .scrollDismissesKeyboard(.interactively)
-        .navigationTitle("Experience Title")
+        .navigationTitle("experience_title")
     }
 }
 

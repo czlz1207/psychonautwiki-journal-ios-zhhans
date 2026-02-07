@@ -79,11 +79,11 @@ struct JournalCalendarScreen: View {
             }
         }
         .frame(maxWidth: 375, maxHeight: .infinity)
-        .navigationTitle("Calendar")
+        .navigationTitle("calendar")
         .navigationBarTitleDisplayMode(.inline)
         .toolbar {
             ToolbarItem(placement: .topBarTrailing) {
-                Button("Today") {
+                Button("today") {
                     calendarViewProxy.scrollToDay(
                         containing: Date.now,
                         scrollPosition: .lastFullyVisiblePosition(padding: 0),

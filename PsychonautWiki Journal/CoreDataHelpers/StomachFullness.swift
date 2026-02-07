@@ -26,15 +26,15 @@ enum StomachFullness: String, CaseIterable, Identifiable, Codable {
     var text: String {
         switch self {
         case .empty:
-            return "Empty"
+            return NSLocalizedString("empty", comment: "")
         case .quarterFull:
-            return "Quarter Full"
+            return NSLocalizedString("quarter_full", comment: "")
         case .halfFull:
-            return "Half Full"
+            return NSLocalizedString("half_full", comment: "")
         case .full:
-            return "Full"
+            return NSLocalizedString("full", comment: "")
         case .veryFull:
-            return "Very Full"
+            return NSLocalizedString("very_full", comment: "")
         }
     }
 

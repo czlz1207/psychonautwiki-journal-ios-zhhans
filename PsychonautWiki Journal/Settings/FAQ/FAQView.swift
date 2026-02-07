@@ -24,7 +24,7 @@ struct FAQView: View {
                     .foregroundColor(.secondary)
             }
         }
-        .navigationTitle("FAQ")
+        .navigationTitle("faq")
     }
 }
 

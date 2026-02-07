@@ -35,6 +35,6 @@ struct FabLabelStyle: LabelStyle {
 #Preview {
     Button {
     } label: {
-        Label("New Ingestion", systemImage: "plus").labelStyle(FabLabelStyle())
+        Label("new_ingestion", systemImage: "plus").labelStyle(FabLabelStyle())
     }
 }

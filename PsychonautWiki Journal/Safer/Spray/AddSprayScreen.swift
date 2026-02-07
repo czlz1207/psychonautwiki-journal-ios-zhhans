@@ -60,7 +60,7 @@ struct AddSprayScreen: View {
             .toolbar {
                 ToolbarItem(placement: .navigationBarTrailing) {
                     if let sizeInMl, let numSprays, !name.isEmpty {
-                        Button("Save") {
+                        Button("save") {
                             save(sizeInMl: sizeInMl, numSprays: numSprays)
                             dismiss()
                         }

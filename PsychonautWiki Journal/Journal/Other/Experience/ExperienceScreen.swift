@@ -158,7 +158,7 @@ struct ExperienceScreen: View {
             let threeHours: TimeInterval = 3*60*60
             if experience.isCurrent || experience.creationDateUnwrapped.distance(to: .now) < threeHours {
                 Button(action: addIngestion) {
-                    Label("New Ingestion", systemImage: "plus").labelStyle(FabLabelStyle())
+                    Label("new_ingestion", systemImage: "plus").labelStyle(FabLabelStyle())
                 }
             }
         } screen: {
@@ -202,7 +202,7 @@ struct ExperienceScreen: View {
                             NavigationLink(value: GlobalNavigationDestination.timeline(
                                 timelineModel: timelineModel,
                                 timeDisplayStyle: timeDisplayStyle)) {
-                                    Label("Timeline screen", systemImage: "arrow.down.left.and.arrow.up.right.square").labelStyle(.iconOnly)
+                                    Label("timeline_screen", systemImage: "arrow.down.left.and.arrow.up.right.square").labelStyle(.iconOnly)
                                 }
                         }
                     }
@@ -299,7 +299,7 @@ struct ExperienceScreen: View {
                             Text("Tolerance")
                             Spacer()
                             NavigationLink(value: GlobalNavigationDestination.toleranceTexts(substances: experience.chartData.substancesInChart)) {
-                                Label("Tolerance info", systemImage: "doc.plaintext").labelStyle(.iconOnly)
+                                Label("tolerance_info", systemImage: "doc.plaintext").labelStyle(.iconOnly)
                             }
                         }
                     } footer: {
@@ -330,7 +330,7 @@ struct ExperienceScreen: View {
                             NavigationLink(value: GlobalNavigationDestination.timeline(
                                 timelineModel: consumerTimelineModel,
                                 timeDisplayStyle: timeDisplayStyle)) {
-                                    Label("Timeline screen", systemImage: "arrow.down.left.and.arrow.up.right.square").labelStyle(.iconOnly)
+                                    Label("timeline_screen", systemImage: "arrow.down.left.and.arrow.up.right.square").labelStyle(.iconOnly)
                                 }
                         }
                     }
@@ -344,7 +344,7 @@ struct ExperienceScreen: View {
                         }
                         if experience.substancesUsed.contains(where: { $0.isHallucinogen }) {
                             NavigationLink(value: GlobalNavigationDestination.saferHallucinogen) {
-                                Label("Safer Hallucinogens", systemImage: "cross")
+                                Label("safer_hallucinogens", systemImage: "cross")
                             }
                         }
                         ForEach(experience.interactions) { interaction in
@@ -358,7 +358,7 @@ struct ExperienceScreen: View {
                         }
                         if experience.interactions.isEmpty {
                             NavigationLink(value: GlobalNavigationDestination.allInteractions(substancesToCheck: experience.substancesUsed)) {
-                                Label("See Interactions", systemImage: "exclamationmark.triangle")
+                                Label("see_interactions", systemImage: "exclamationmark.triangle")
                             }
                         }
                         if experience.isCurrent {
@@ -376,7 +376,7 @@ struct ExperienceScreen: View {
                             Button {
                                 sheetToShow = .editLocation(experienceLocation: location)
                             } label: {
-                                Label("Edit Location", systemImage: "pencil")
+                                Label("edit_location", systemImage: "pencil")
                                     .labelStyle(.iconOnly)
                             }
                         }
@@ -434,14 +434,14 @@ struct ExperienceScreen: View {
             }
         }
         .confirmationDialog(
-            "Delete Experience?",
+            LocalizedStringKey("delete_experience_question"),
             isPresented: $isShowingDeleteConfirmation,
             titleVisibility: .visible,
             actions: {
                 Button("Delete", role: .destructive) {
                     delete()
                 }
-                Button("Cancel", role: .cancel) {}
+                Button(LocalizedStringKey("cancel"), role: .cancel) {}
             },
             message: {
                 Text("This will also delete all of its ingestions.")

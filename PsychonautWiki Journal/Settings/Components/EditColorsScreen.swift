@@ -37,7 +37,7 @@ struct EditColorsScreen: View {
         List {
             Section {
                 if substanceCompanions.isEmpty {
-                    Text("No colors added yet")
+                    Text("no_colors_added_yet")
                 } else {
                     ForEach(substanceCompanions) { companion in
                         Button(action: {
@@ -61,7 +61,7 @@ struct EditColorsScreen: View {
                 )
             }
         })
-        .navigationTitle("Edit Colors")
+        .navigationTitle("edit_colors")
         .onAppear {
             for substanceCompanion in substanceCompanions {
                 if substanceCompanion.ingestionsUnwrapped.isEmpty {
@@ -82,21 +82,21 @@ struct CompanionColorPickerScreen: View {
     var body: some View {
         List {
             if !otherColors.isEmpty {
-                Section("Unused Colors") {
+                Section("unused_colors") {
                     ForEach(otherColors) { color in
                         button(for: color)
                     }
                 }
             }
             if !alreadyUsedColors.isEmpty {
-                Section("Used Colors") {
+                Section("used_colors") {
                     ForEach(alreadyUsedColors) { color in
                         button(for: color)
                     }
                 }
             }
         }
-        .navigationTitle("Choose Color")
+        .navigationTitle("choose_color")
     }
 
     private func button(for color: SubstanceColor) -> some View {

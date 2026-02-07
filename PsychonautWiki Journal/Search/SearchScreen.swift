@@ -126,7 +126,7 @@ struct SearchScreen: View {
                     }
                 }
                 if substancesFilteredAndSorted.isEmpty && customSubstancesFiltered.isEmpty {
-                    Text("No Results")
+                    Text("no_results")
                         .foregroundColor(.secondary)
                 }
                 Button {

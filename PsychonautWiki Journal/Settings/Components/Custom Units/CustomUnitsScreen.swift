@@ -34,14 +34,14 @@ struct CustomUnitsScreen: View {
                     Button {
                         isAddShown.toggle()
                     } label: {
-                        Label("Add Custom Unit", systemImage: "plus").labelStyle(.iconOnly)
+                        Label("add_custom_unit", systemImage: "plus").labelStyle(.iconOnly)
                     }
                 }
             }
             .fullScreenCover(isPresented: $isAddShown, content: {
                 CustomUnitsChooseSubstanceScreen()
             })
-            .navigationTitle("Custom Units")
+            .navigationTitle("custom_units")
     }
 }
 
@@ -70,7 +70,7 @@ struct FilteredCustomUnits: View {
     var body: some View {
         List {
             if fetchRequest.isEmpty {
-                Text("No custom units")
+                Text("no_custom_units")
                     .foregroundColor(.secondary)
             }
 

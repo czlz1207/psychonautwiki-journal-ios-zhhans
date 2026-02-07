@@ -32,7 +32,7 @@ struct ToleranceSection: View {
             }
             let crossTolerances = substance.crossTolerances.joined(separator: ", ")
             if !crossTolerances.isEmpty {
-                Text("Cross tolerance with \(crossTolerances)")
+                Text("\(Text("cross_tolerance_with")) \(crossTolerances)")
             }
         } header: {
             Text("Tolerance")

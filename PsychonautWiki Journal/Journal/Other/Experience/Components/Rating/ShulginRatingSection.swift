@@ -46,7 +46,7 @@ struct ShulginRatingSection: View {
                     let isRatingHidden = hiddenRatings.contains(rating.id)
                     HStack(alignment: .center) {
                         if isRatingHidden {
-                            Label("Hidden", systemImage: "eye.slash.fill").labelStyle(.iconOnly)
+                            Label("hidden", systemImage: "eye.slash.fill").labelStyle(.iconOnly)
                         }
                         RatingRow(rating: rating) {
                             if timeDisplayStyle == .relativeToNow {

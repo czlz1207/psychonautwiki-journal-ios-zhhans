@@ -56,17 +56,17 @@ struct ExperienceDetailsScreen: View {
             .listRowSeparator(.hidden)
             .chartLegend(.hidden)
             if timeRange == .last12Months {
-                Section("Options") {
-                    Toggle("Show Monthly Average", isOn: $isShowingMonthlyAverageLine).tint(.accentColor)
+                Section("options") {
+                    Toggle("show_monthly_average", isOn: $isShowingMonthlyAverageLine).tint(.accentColor)
                 }
             } else if timeRange == .years {
-                Section("Options") {
-                    Toggle("Show Yearly Average", isOn: $isShowingYearlyAverageLine).tint(.accentColor)
+                Section("options") {
+                    Toggle("show_yearly_average", isOn: $isShowingYearlyAverageLine).tint(.accentColor)
                 }
             }
             let substanceExperienceCounts = experienceData.getSubstanceExperienceCounts(in: timeRange)
             if !substanceExperienceCounts.isEmpty {
-                Section(footer: Text("If a substance is one of n substances in an experience it is counted as 1/n experiences")) {
+                Section(footer: Text("substance_count_footer")) {
                     ForEach(substanceExperienceCounts) { count in
                         HStack {
                             Image(systemName: "circle.fill")
@@ -74,7 +74,7 @@ struct ExperienceDetailsScreen: View {
                             Text(count.substanceName)
                                 .font(.headline)
                             Spacer()
-                            Text("\(count.experienceCount.asRoundedReadableString) experiences")
+                            Text("\(count.experienceCount.asRoundedReadableString) ") + Text("experiences")
                                 .font(.subheadline)
                                 .foregroundColor(.secondary)
                             if highlightedSubstanceNames.contains(count.substanceName) {
@@ -85,7 +85,7 @@ struct ExperienceDetailsScreen: View {
                                         }
                                     }
                                 } label: {
-                                    Label("Remove Highlight", systemImage: "checkmark.circle").labelStyle(.iconOnly)
+                                    Label("remove_highlight", systemImage: "checkmark.circle").labelStyle(.iconOnly)
                                 }
                             } else {
                                 Button {
@@ -93,7 +93,7 @@ struct ExperienceDetailsScreen: View {
                                         highlightedSubstanceNames.append(count.substanceName)
                                     }
                                 } label: {
-                                    Label("Highlight", systemImage: "circle").labelStyle(.iconOnly)
+                                    Label("highlight", systemImage: "circle").labelStyle(.iconOnly)
                                 }
                             }
                         }
@@ -102,13 +102,13 @@ struct ExperienceDetailsScreen: View {
             }
             if !highlightedSubstanceNames.isEmpty {
                 Section {
-                    Button("Clear Highlighted Substances") {
+                    Button("clear_highlighted_substances") {
                         highlightedSubstanceNames = []
                     }
                 }
             }
         }
-        .navigationTitle("Total Experiences")
+        .navigationTitle("total_experiences")
     }
 
     private func getColor(name: String) -> Color {

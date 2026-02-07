@@ -31,15 +31,15 @@ enum SaveableTimeDisplayStyle: String, CaseIterable, Identifiable {
     var text: String {
         switch self {
         case .regular:
-            return "Regular time"
+            return NSLocalizedString("regular_time", comment: "")
         case .relativeToNow:
-            return "Time relative to now"
+            return NSLocalizedString("time_relative_now", comment: "")
         case .relativeToStart:
-            return "Time relative to start"
+            return NSLocalizedString("time_relative_start", comment: "")
         case .between:
-            return "Time between"
+            return NSLocalizedString("time_between", comment: "")
         case .auto:
-            return "Auto"
+            return NSLocalizedString("auto", comment: "")
         }
     }
 }

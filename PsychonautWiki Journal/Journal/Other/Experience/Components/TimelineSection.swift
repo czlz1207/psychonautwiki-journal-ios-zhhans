@@ -131,7 +131,7 @@ struct TimelineSection: View {
                         )
                         let isIngestionHidden = hiddenIngestions.contains(ingestion.id)
                         if isIngestionHidden {
-                            Label("Hidden", systemImage: "eye.slash.fill").labelStyle(.iconOnly)
+                            Label("hidden", systemImage: "eye.slash.fill").labelStyle(.iconOnly)
                         }
                     }
                 }

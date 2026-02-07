@@ -300,7 +300,7 @@ struct StatsScreenContent: View {
                 }
             }
             if !substancesConsumedInLastYear.isEmpty {
-                Section("Dosage Stats") {
+                Section("dosage_stats") {
                     ForEach(substancesConsumedInLastYear) { substanceCompanion in
                         NavigationLink(value: GlobalNavigationDestination.dosageStat(substanceName: substanceCompanion.substanceNameUnwrapped)) {
                             HStack(spacing: 8) {
@@ -311,7 +311,7 @@ struct StatsScreenContent: View {
                     }
                 }
             }
-        }.navigationTitle("Your Stats")
+        }.navigationTitle("your_stats")
     }
 }
 

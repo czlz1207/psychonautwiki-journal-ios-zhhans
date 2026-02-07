@@ -20,7 +20,7 @@ struct MDMAPillsSection: View {
     var body: some View {
         Section("Pills") {
             Text("The average concentration of MDMA in ecstasy pills, tested in a drug checking program in Zurich, doubled between 2010 and 2018. The percentage of pills containing more than 120 mg MDMA rose from 4% to 73%.\nThe MDMA content of pills cannot be estimated visually. E.g. in Zurich pills that looked identical had differences of 220 mg in 2021. To determine the contents of your pills you need to test your substances quantitatively with free and anonymous testing services.")
-            Link("EMCDDA Statistics", destination: URL(string: "https://www.emcdda.europa.eu/data/stats2022/ppp_en")!)
+            Link("emcdda_statistics", destination: URL(string: "https://www.emcdda.europa.eu/data/stats2022/ppp_en")!)
             Group {
                 VStack(alignment: .leading) {
                     Text("Average Pill Switzerland 2021")

@@ -41,13 +41,13 @@ struct SubstanceOverview: View {
 
     var body: some View {
         VStack(alignment: .leading) {
-            Text("Most Experiences Last 12 Months")
+            Text("most_experiences_last_12_months")
                 .foregroundStyle(.secondary)
             if let mostUsedName = substanceData.last12Months.first?.substanceName {
                 Text(mostUsedName)
                     .font(.title2.bold())
             } else {
-                Text("None")
+                Text("none_lowercase")
                     .font(.title2.bold())
             }
             SubstanceOverviewChart(substanceData: substanceData)

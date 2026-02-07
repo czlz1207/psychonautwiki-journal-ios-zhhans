@@ -80,7 +80,7 @@ struct ExperienceRow: View {
                     experience.isFavorite = !experience.isFavorite
                     PersistenceController.shared.saveViewContext()
                 } label: {
-                    Label("Toggle Favorite", systemImage: "star")
+                    Label("toggle_favorite", systemImage: "star")
                 }.tint(.yellow)
             }
         }
@@ -139,7 +139,7 @@ struct ExperienceRowContent: View {
                     HStack {
                         Group {
                             if distinctSubstanceNames.isEmpty {
-                                Text("No substance")
+                                Text("no_substance")
                             } else {
                                 Text(distinctSubstanceNames, format: .list(type: .and))
                             }

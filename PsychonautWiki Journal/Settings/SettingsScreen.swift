@@ -102,14 +102,14 @@ struct SettingsContent: View {
 
     var body: some View {
         List {
-            Section("Privacy") {
+            Section("privacy") {
                 if isFaceIDAvailable {
-                    Toggle("Require App Unlock", isOn: $hasToUnlockApp.animation()).tint(Color.accentColor)
+                    Toggle("require_app_unlock", isOn: $hasToUnlockApp.animation()).tint(Color.accentColor)
                 } else {
-                    Text("Enable Face ID for Journal in settings to lock the app.")
+                    Text("enable_face_id_message")
                 }
                 if hasToUnlockApp {
-                    Picker("Time option", selection: $lockTimeOption) {
+                    Picker("time_option", selection: $lockTimeOption) {
                         ForEach(LockTimeOption.allCases) { option in
                             Text(option.text)
                         }
@@ -119,96 +119,88 @@ struct SettingsContent: View {
                 }
             }
             if isEyeOpen {
-                Section("UI") {
+                Section("ui") {
                     NavigationLink(value: GlobalNavigationDestination.editColors) {
-                        Label("Edit Substance Colors", systemImage: "paintpalette")
+                        Label("edit_substance_colors", systemImage: "paintpalette")
                     }
                     NavigationLink(value: GlobalNavigationDestination.customUnits) {
-                        Label("Custom Units", systemImage: "pills")
+                        Label("custom_units", systemImage: "pills")
                     }
                     Group {
-                        Toggle("Hide dosage dots", isOn: $isHidingDosageDots)
-                        Toggle("Hide tolerance chart", isOn: $isHidingToleranceChartInExperience)
-                        Toggle("Hide substance info", isOn: $isHidingSubstanceInfoInExperience)
-                        Toggle("Draw redoses individually", isOn: $areRedosesDrawnIndividually)
-                        Toggle("Independent substance heights", isOn: $areSubstanceHeightsIndependent)
+                        Toggle("hide_dosage_dots", isOn: $isHidingDosageDots)
+                        Toggle("hide_tolerance_chart", isOn: $isHidingToleranceChartInExperience)
+                        Toggle("hide_substance_info", isOn: $isHidingSubstanceInfoInExperience)
+                        Toggle("draw_redoses_individually", isOn: $areRedosesDrawnIndividually)
+                        Toggle("independent_substance_heights", isOn: $areSubstanceHeightsIndependent)
                         if #available(iOS 16.2, *) {
                             if ActivityManager.shared.authorizationInfo.areActivitiesEnabled {
-                                Toggle("Automatic live activities", isOn: $shouldAutomaticallyStartLiveActivity)
+                                Toggle("automatic_live_activities", isOn: $shouldAutomaticallyStartLiveActivity)
                             }
                         }
                     }.tint(.accentColor)
                 }
             }
             Section(
-                header: Text("Journal Data"),
-                footer: Text("You can export all your data into a file on your phone and import it again at a later time. This way you can migrate your data to Android or delete the app without losing your data.")
+                header: Text("journal_data"),
+                footer: Text("journal_data_footer")
             ) {
                 Button {
                     exportData()
                 } label: {
-                    Label("Export Data", systemImage: "arrow.up.doc")
+                    Label("export_data", systemImage: "arrow.up.doc")
                 }
                 Button {
                     isShowingImportAlert.toggle()
                 } label: {
-                    Label("Import Data", systemImage: "arrow.down.doc")
+                    Label("import_data", systemImage: "arrow.down.doc")
                 }
                 .confirmationDialog(
-                    "Are you sure?",
+                    "are_you_sure",
                     isPresented: $isShowingImportAlert,
                     titleVisibility: .visible,
                     actions: {
-                        Button("Import", role: .destructive) {
+                        Button("import", role: .destructive) {
                             isImporting.toggle()
                         }
-                        Button("Cancel", role: .cancel) {}
+                        Button("cancel", role: .cancel) {}
                     },
                     message: {
-                        Text("Importing will delete all the data currently in the app and replace it with the imported data.")
+                        Text("import_warning")
                     }
                 )
                 Button {
                     isShowingDeleteConfirmation.toggle()
                 } label: {
-                    Label("Delete Everything", systemImage: "trash").foregroundColor(.red)
+                    Label("delete_everything", systemImage: "trash").foregroundColor(.red)
                 }
                 .confirmationDialog(
-                    "Delete Everything?",
+                    "delete_everything_title",
                     isPresented: $isShowingDeleteConfirmation,
                     titleVisibility: .visible,
                     actions: {
-                        Button("Delete", role: .destructive) {
+                        Button("delete", role: .destructive) {
                             deleteEverything()
                         }
-                        Button("Cancel", role: .cancel) {}
+                        Button("cancel", role: .cancel) {}
                     },
                     message: {
-                        Text("This will delete all your experiences, ingestions, custom substances and sprays.")
+                        Text("delete_warning")
                     }
                 )
             }
-            Section("Communication") {
-                if isEyeOpen {
-                    NavigationLink(value: GlobalNavigationDestination.shareApp) {
-                        Label("Share App", systemImage: "person.2")
-                    }
-                }
-                Link(destination: URL(string: isEyeOpen ? "https://t.me/+ss8uZhBF6g00MTY8" : "https://t.me/isaakhanimann")!) {
-                    Label("Question, Bug Report", systemImage: "exclamationmark.bubble")
-                }
+            Section("communication") {
                 if isEyeOpen {
                     NavigationLink(value: GlobalNavigationDestination.faq) {
-                        Label("Frequently Asked Questions", systemImage: "questionmark.square")
+                        Label("frequently_asked_questions", systemImage: "questionmark.square")
                     }
                     Link(destination: URL(string: "https://github.com/isaakhanimann/psychonautwiki-journal-ios")!) {
-                        Label("Source Code", systemImage: "doc.text.magnifyingglass")
+                        Label("source_code", systemImage: "doc.text.magnifyingglass")
                     }
                 }
             }
             Section {
                 HStack {
-                    Text("Version")
+                    Text("version")
                     Spacer()
                     Text(getCurrentAppVersion())
                         .foregroundColor(.secondary)
@@ -226,11 +218,11 @@ struct SettingsContent: View {
                     let data = try Data(contentsOf: selectedFile)
                     importData(data)
                 } else {
-                    toastViewModel.showErrorToast(message: "Permission Denied")
+                    toastViewModel.showErrorToast(message: "permission_denied")
                 }
                 selectedFile.stopAccessingSecurityScopedResource()
             } catch {
-                toastViewModel.showErrorToast(message: "Import Failed")
+                toastViewModel.showErrorToast(message: "import_failed")
                 print("Error getting data: \(error.localizedDescription)")
             }
         }
@@ -241,12 +233,12 @@ struct SettingsContent: View {
             defaultFilename: "Journal \(Date().asDateString)"
         ) { result in
             if case .success = result {
-                toastViewModel.showSuccessToast(message: "Export Successful")
+                toastViewModel.showSuccessToast(message: "export_successful")
             } else {
-                toastViewModel.showErrorToast(message: "Export Failed")
+                toastViewModel.showErrorToast(message: "export_failed")
             }
         }
-        .navigationTitle("Settings")
+        .navigationTitle("settings")
         .toast(isPresenting: $isShowingToast) {
             AlertToast(
                 displayMode: .alert,

@@ -31,7 +31,7 @@ struct FabPosition<Screen: View, Button: View>: View {
 #Preview {
     FabPosition {
         Button {} label: {
-            Label("New Ingestion", systemImage: "plus")
+            Label("new_ingestion", systemImage: "plus")
                 .labelStyle(FabLabelStyle())
         }
     } screen: {

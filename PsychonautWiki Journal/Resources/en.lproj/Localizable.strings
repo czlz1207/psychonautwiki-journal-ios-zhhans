@@ -1,0 +1,612 @@
+/* Navigation */
+"substances" = "Substances";
+"safer" = "Safer";
+"stats" = "Stats";
+"journal" = "Journal";
+"settings" = "Settings";
+
+/* Common Actions */
+"cancel" = "Cancel";
+"done" = "Done";
+"next" = "Next";
+"save" = "Save";
+"add" = "Add";
+"edit" = "Edit";
+"delete" = "Delete";
+"ok" = "OK";
+"yes" = "Yes";
+"no" = "No";
+"search" = "Search";
+"filter" = "Filter";
+"close" = "Close";
+
+/* Privacy & Security */
+"privacy" = "Privacy";
+"require_app_unlock" = "Require App Unlock";
+"enable_face_id_message" = "Enable Face ID for Journal in settings to lock the app.";
+"time_option" = "Time option";
+"face_id_disabled_message" = "Face ID is disabled.\nEnable it for Journal in settings to unlock the app.";
+
+/* UI Settings */
+"ui" = "UI";
+"edit_substance_colors" = "Edit Substance Colors";
+"custom_units" = "Custom Units";
+"hide_dosage_dots" = "Hide dosage dots";
+"hide_tolerance_chart" = "Hide tolerance chart";
+"hide_substance_info" = "Hide substance info";
+"draw_redoses_individually" = "Draw redoses individually";
+"independent_substance_heights" = "Independent substance heights";
+"automatic_live_activities" = "Automatic live activities";
+
+/* Journal Data */
+"journal_data" = "Journal Data";
+"journal_data_footer" = "You can export all your data into a file on your phone and import it again at a later time. This way you can migrate your data to Android or delete the app without losing your data.";
+"export_data" = "Export Data";
+"import_data" = "Import Data";
+"delete_everything" = "Delete Everything";
+"are_you_sure" = "Are you sure?";
+"import" = "Import";
+"import_warning" = "Importing will delete all the data currently in the app and replace it with the imported data.";
+"delete_everything_title" = "Delete Everything?";
+"delete_warning" = "This will delete all your experiences, ingestions, custom substances and sprays.";
+
+/* Communication */
+"communication" = "Communication";
+"question_bug_report" = "Question, Bug Report";
+"frequently_asked_questions" = "Frequently Asked Questions";
+"source_code" = "Source Code";
+
+/* General */
+"version" = "Version";
+"permission_denied" = "Permission Denied";
+"import_failed" = "Import Failed";
+"import_successful" = "Import Successful";
+"delete_successful" = "Delete Successful";
+"export_successful" = "Export Successful";
+"export_failed" = "Export Failed";
+"you" = "You";
+"name" = "Name";
+"dose" = "Dose";
+"time" = "Time";
+"notes" = "Notes";
+"estimated_dose_standard_placeholder" = "Estimated dose in standard units";
+"search_substance" = "Search substance";
+"search_experiences" = "Search experiences";
+
+/* Add Ingestion */
+"safer_routes" = "Safer Routes";
+"other_routes" = "Other Routes";
+"info_not_approved" = "Info is not approved by PsychonautWiki moderators.";
+"add_new_custom_unit" = "Add new custom unit";
+"pure_dose" = "Pure %@ Dose";
+"add_a_custom_unit" = "Add a custom unit";
+"there_are_no_documented_interactions" = "There are no documented interactions";
+
+/* Experience */
+"experience" = "Experience";
+"new_experience" = "New Experience";
+"consumer" = "Consumer";
+"add_note" = "Add Note";
+"add_title" = "Add Title";
+"add_location" = "Add Location";
+"color" = "%@ Color";
+"start_live_activity" = "Start Live Activity";
+"title" = "Title";
+"location" = "Location";
+"rating" = "Rating";
+"overall_rating" = "Overall Rating";
+
+/* Time */
+"time_point" = "Time point";
+"time_range" = "Time range";
+"reset_time" = "Reset time";
+"ingestion_time" = "Ingestion Time";
+"start_time" = "Start time";
+"end_time" = "End time";
+"time" = "Time";
+
+/* Dose */
+"units" = "Units";
+"units_placeholder" = "e.g. cups";
+"estimated_dose" = "Estimated Dose";
+"pure" = "Pure";
+"unknown_dose" = "Unknown Dose";
+
+/* Navigation Titles */
+"safer_use" = "Safer Use";
+"your_stats" = "Your Stats";
+"total_experiences" = "Total Experiences";
+"choose_date" = "Choose Date";
+"chart_limitations" = "Chart Limitations";
+"tolerance" = "Tolerance";
+"add_temp_ingestion" = "Add Temp. Ingestion";
+"tolerances" = "Tolerances";
+"ingestion_note" = "Ingestion Note";
+"choose_color" = "Choose Color";
+"edit_consumer" = "Edit Consumer";
+"choose_experience" = "Choose Experience";
+"experience_location" = "Experience Location";
+"experience_title" = "Experience Title";
+"mdma_dose" = "MDMA Dose";
+"share_app" = "Share App";
+"edit_colors" = "Edit Colors";
+"create_custom" = "Create Custom";
+"add_custom_unit" = "Add Custom Unit";
+"choose_substance" = "Choose Substance";
+"edit_unit" = "Edit Unit";
+"archive" = "Archive";
+"dosage_classification" = "Dosage Classification";
+"reagent_testing" = "Reagent Testing";
+"administration_routes" = "Administration Routes";
+"testing_services" = "Testing Services";
+"volumetric_dosing" = "Volumetric Dosing";
+"safer_hallucinogens" = "Safer Hallucinogens";
+"add_spray" = "Add Spray";
+"spray_calculator" = "Spray Calculator";
+"dosage_guide" = "Dosage Guide";
+"faq" = "FAQ";
+"calendar" = "Calendar";
+"timeline_info" = "Timeline Info";
+"edit_notes" = "Edit Notes";
+"add_timed_note" = "Add Timed Note";
+"edit_title" = "Edit Title";
+"add_rating" = "Add Rating";
+"edit_rating" = "Edit Rating";
+"finish_ingestion" = "Finish Ingestion";
+
+/* Section Headers */
+"ingestion" = "Ingestion";
+"interactions" = "Interactions";
+"duration" = "Duration";
+"dosage" = "Dosage";
+"effects" = "Effects";
+"pharmacology" = "Pharmacology";
+"chemistry" = "Chemistry";
+"toxicity" = "Toxicity";
+"legal" = "Legal";
+"description" = "Description";
+"summary" = "Summary";
+"subjective_effects" = "Subjective Effects";
+"routes_of_administration" = "Routes of Administration";
+
+/* Stomach Fullness */
+"stomach_fullness" = "Stomach Fullness";
+"empty" = "Empty";
+"quarter_full" = "Quarter Full";
+"half_full" = "Half Full";
+"full" = "Full";
+"very_full" = "Very Full";
+"hours_delay" = "hours delay";
+
+/* Dosage Levels */
+"threshold" = "Threshold";
+"light" = "Light";
+"common" = "Common";
+"strong" = "Strong";
+"heavy" = "Heavy";
+
+/* Stats */
+"experiences" = "Experiences";
+"cumulative_dose" = "Cumulative Dose";
+"average_dose" = "Average Dose";
+"timeline" = "Timeline";
+"chart" = "Chart";
+"list" = "List";
+
+/* Routes */
+"oral" = "Oral";
+"smoked" = "Smoked";
+"insufflated" = "Insufflated";
+"sublingual" = "Sublingual";
+"buccal" = "Buccal";
+"rectal" = "Rectal";
+"transdermal" = "Transdermal";
+"subcutaneous" = "Subcutaneous";
+"intramuscular" = "Intramuscular";
+"intravenous" = "Intravenous";
+"inhaled" = "Inhaled";
+
+/* Timed Notes */
+"timed_note" = "Timed Note";
+"timed_notes" = "Timed Notes";
+
+/* Custom Substances */
+"custom_substance" = "Custom Substance";
+"custom_substances" = "Custom Substances";
+"create_custom_substance" = "Create Custom Substance";
+
+/* Additional Labels */
+"add_ingestion" = "Add Ingestion";
+"add_temporary_ingestion" = "Add Temporary Ingestion";
+"unused_colors" = "Unused Colors";
+"used_colors" = "Used Colors";
+"create_new" = "Create New";
+"close_experiences" = "Close Experiences";
+"selected_location" = "Selected Location";
+"suggestions" = "Suggestions";
+"chasing_the_dragon" = "Chasing the dragon (foiling)";
+"nicotine_content_vs_dose" = "Nicotine Content vs Dose";
+"info" = "Info";
+"disclaimer" = "Disclaimer";
+"max_dose_calculator" = "Max Dose Calculator";
+"choose_dose" = "Choose Dose";
+"prefer_to_log_pill" = "Prefer to log pill?";
+"pills" = "Pills";
+"desirable_vs_adverse_effects" = "Desirable vs Adverse Effects";
+"estimate_unknown_doses_as" = "Estimate unknown doses as";
+"dosage_stats" = "Dosage Stats";
+"options" = "Options";
+"original_unit" = "Original Unit";
+"ingestion_preview" = "Ingestion Preview";
+"dose_picker_preview" = "Dose Picker Preview";
+"research" = "Research";
+"testing" = "Testing";
+"set" = "Set";
+"setting" = "Setting";
+"combinations" = "Combinations";
+"allergy_tests" = "Allergy Tests";
+"reflection" = "Reflection";
+"safety_of_others" = "Safety of Others";
+"recovery_position" = "Recovery Position";
+"add_ingestion_at_same_time" = "Add ingestion at same time";
+
+/* Additional UI Elements */
+"new_ingestion" = "New Ingestion";
+"new_custom_substance" = "New Custom Substance";
+"choose_color" = "Choose Color";
+"choose_experience" = "Choose Experience";
+"choose_unit" = "Choose Unit";
+"delete_substance" = "Delete Substance";
+"delete_ingestion" = "Delete ingestion";
+"show_monthly_average" = "Show Monthly Average";
+"show_yearly_average" = "Show Yearly Average";
+"unknown_dose_estimate" = "Unknown dose estimate";
+"enter_name" = "Enter Name";
+"consumer_name" = "Consumer name";
+"enter_note" = "Enter Note";
+"suggestions" = "Suggestions";
+
+/* Sub-page Navigation Titles */
+"edit_consumer" = "Edit Consumer";
+"edit_colors" = "Edit Colors";
+"edit_rating" = "Edit Rating";
+"edit_note" = "Edit Note";
+"ingestion_note" = "Ingestion Note";
+
+/* Delete Actions */
+"delete_location" = "Delete Location";
+"delete_unit" = "Delete Unit";
+"delete_rating" = "Delete Rating";
+"delete_note" = "Delete Note";
+"delete_experience" = "Delete Experience";
+"delete_coordinates" = "Delete Coordinates";
+
+/* Add Actions */
+"add_a_custom_unit" = "Add a custom unit";
+"add_new_custom_unit" = "Add new custom unit";
+
+/* No Data Messages */
+"no_results" = "No Results";
+"no_experiences" = "No experiences";
+"none" = "None";
+"no_ingestions_yet" = "No ingestions yet";
+"no_substance" = "No substance";
+"no_custom_units" = "No custom units";
+"no_archived_custom_units" = "No archived custom units";
+"no_colors_added_yet" = "No colors added yet";
+"no_ingestions_using_unit" = "No ingestions are using this unit yet";
+"no_experiences_match_search" = "No experiences match the search";
+"no_favorites_match_search" = "No favorites match the search";
+"no_tolerance_info" = "No tolerance info";
+"no_ingestions_with_tolerance" = "No ingestions with tolerance info";
+"no_documented_interactions" = "No documented interactions";
+
+/* Time and Location */
+"current_location" = "Current Location";
+"note_color" = "Note Color";
+"time_range" = "Time range";
+"show_average" = "Show Average";
+"enable_location_access" = "Enable Location Access";
+"location_access_footer" = "Enable location access in settings to add locations to your experiences automatically.";
+
+/* Dosage Messages */
+"dosage_unit_mismatch" = "Not all your ingestions of %@ are using %@ as their pure unit. It's therefore not possible to sum those doses together to show a graph.";
+"no_ingestions_last_30_days" = "No %@ ingestions in the last 30 days";
+"no_ingestions_last_26_weeks" = "No %@ ingestions in the last 26 weeks";
+"no_ingestions_last_12_months" = "No %@ ingestions in the last 12 months";
+"no_ingestions_total" = "No %@ ingestions";
+
+/* Spray Note */
+"spray_note" = "Note: fill it into the spray bottle and count the number of sprays. To make sure the last couple of sprays still work properly use a small spray bottle (5ml) and fill it completely.";
+
+/* Time Relative */
+"now_after_start" = "Now %@ after start";
+
+/* Toggle Labels */
+"estimate" = "Estimate";
+"relative_time" = "Relative time";
+"is_part_of_timeline" = "Is part of timeline";
+"hide_in_timeline" = "Hide in timeline";
+"overall_rating" = "Overall Rating";
+"archive" = "Archive";
+
+/* Picker Labels */
+"units" = "Units";
+"time_picker_option" = "Time picker option";
+"gender" = "Gender";
+"stomach" = "Stomach";
+"time_range_picker" = "Time Range";
+"stomach_fullness" = "Stomach Fullness";
+"shulgin_rating" = "Shulgin Rating";
+"ingestion_date" = "Ingestion Date";
+
+/* NavigationLink Labels */
+"volumetric_dosing_recommended" = "Volumetric Dosing Recommended";
+"use_unknown_dose" = "Use Unknown Dose";
+"use_unknown_dose_lower" = "Use unknown dose";
+"unknown" = "Unknown";
+"other_dose" = "Other dose";
+"drug_testing_services" = "Drug Testing Services";
+"reagent_testing" = "Reagent Testing";
+"volumetric_liquid_dosing" = "Volumetric Liquid Dosing";
+"safer_hallucinogen_guide" = "Safer Hallucinogen Guide";
+"administration_routes_info" = "Administration Routes Info";
+"article" = "Article";
+
+/* Link Labels */
+"emcdda_statistics" = "EMCDDA Statistics";
+"dancesafe" = "DanceSafe";
+"bunk_police" = "Bunk Police";
+"share_link" = "Share link";
+"share_app_store_link" = "Share app store link";
+"share_play_store_link" = "Share play store link";
+
+/* Gender Options */
+"male" = "Male";
+"female" = "Female";
+
+/* Time Picker Options */
+"time_point" = "Time point";
+"time_range_option" = "Time range";
+
+/* Edit Ingestion */
+"edit_ingestion" = "Edit Ingestion";
+
+/* Additional Buttons */
+"done" = "Done";
+"today" = "Today";
+"ok" = "Ok";
+"disclaimer" = "Disclaimer";
+"now" = "Now";
+"default" = "Default";
+"clear_highlighted_substances" = "Clear Highlighted Substances";
+
+/* Additional Labels */
+"safer_routes_label" = "Safer Routes";
+"reset_time" = "Reset time";
+"you" = "You";
+"recovery_position_video" = "Recovery Position Video";
+"spray_calculator" = "Spray Calculator";
+"toggle_favorite" = "Toggle Favorite";
+"new_ingestion" = "New Ingestion";
+"timeline_screen" = "Timeline screen";
+"tolerance_info" = "Tolerance info";
+"safer_hallucinogens" = "Safer Hallucinogens";
+"see_interactions" = "See Interactions";
+"edit_location" = "Edit Location";
+"hidden" = "Hidden";
+"open_link" = "Open link";
+"open_app_store_link" = "Open app store link";
+"open_play_store_link" = "Open play store link";
+"stop_live_activity" = "Stop Live Activity";
+"start_live_activity_button" = "Start Live Activity";
+
+/* Additional Section Titles */
+"pure_dose" = "Pure %@ Dose";
+"chasing_the_dragon" = "Chasing the dragon (foiling)";
+"nicotine_content_vs_dose" = "Nicotine Content vs Dose";
+"info" = "Info";
+"disclaimer_title" = "Disclaimer";
+"dose_per_unit" = "Dose per %@";
+"pills" = "Pills";
+"desirable_vs_adverse" = "Desirable vs Adverse Effects";
+"ios_and_android" = "iOS and Android";
+"ios_app" = "iOS App";
+"android_app" = "Android App";
+"oral_max_dose_calculator" = "Oral Max Dose Calculator";
+"duration" = "Duration";
+"limitations" = "Limitations";
+"understanding_visualization" = "Understanding the Visualization";
+"summary" = "Summary";
+"categories" = "Categories";
+"effects" = "Effects";
+"interactions_title" = "Interactions";
+"acute_risk" = "Acute Risk";
+"long_term_risk" = "Long-term Risk";
+"safer_use" = "Safer Use";
+"addiction_potential" = "Addiction Potential";
+"toxicity" = "Toxicity";
+"kit_sellers" = "Kit Sellers";
+
+/* Additional Navigation Titles */
+"safer_substance" = "Safer %@";
+"timeline_info" = "Timeline Info";
+"experience_title" = "Experience Title";  
+"ingestion_note" = "Ingestion Note";
+"substances_title" = "Substances";
+"total_experiences" = "Total Experiences";
+"add_temp_ingestion" = "Add Temp. Ingestion";
+"choose_date" = "Choose Date";
+"tolerance" = "Tolerance";
+"administration_routes" = "Administration Routes";
+"safer_hallucinogens_title" = "Safer Hallucinogens";
+"archive_title" = "Archive";
+"share_app_title" = "Share App";
+"testing_services" = "Testing Services";
+"volumetric_dosing" = "Volumetric Dosing";
+"chart_limitations" = "Chart Limitations";
+"add_spray_title" = "Add Spray";
+"tolerances" = "Tolerances";
+"interactions_screen" = "Interactions";
+"dose_response" = "Dose Response";
+"timeline_info_screen" = "Timeline Info";
+"add_shulgin_rating" = "Add Shulgin Rating";
+
+/* Stats Screen Titles */
+"current_tolerance" = "Current Tolerance";
+"zero_tolerance" = "Zero tolerance";
+"total_experiences_last_12_months" = "Total Experiences Last 12 Months";
+"experiences_count" = "%lld Experiences";
+"most_experiences_last_12_months" = "Most Experiences Last 12 Months";
+"none_lowercase" = "none";
+
+/* Stats Details */
+"experiences" = "experiences";
+"remove_highlight" = "Remove Highlight";
+"highlight" = "Highlight";
+"no_experiences" = "No experiences";
+"substance_count_footer" = "If a substance is one of n substances in an experience it is counted as 1/n experiences";
+"each_occurrence_footer" = "Each occurence of the substance in an experience is counted as 1.";
+"last_30_days" = "Last 30 Days";
+"last_12_months" = "Last 12 Months";
+"years" = "Years";
+
+/* Tolerance Levels */
+"start_date" = "Start Date";
+"half" = "half";
+"zero" = "zero";
+"cross_tolerance_with" = "Cross tolerance with";
+
+/* Color Names */
+"color_blue" = "blue";
+"color_brown" = "brown";
+"color_cyan" = "cyan";
+"color_green" = "green";
+"color_indigo" = "indigo";
+"color_mint" = "mint";
+"color_orange" = "orange";
+"color_pink" = "pink";
+"color_purple" = "purple";
+"color_red" = "red";
+"color_teal" = "teal";
+"color_yellow" = "yellow";
+"color_coral" = "coral";
+
+/* Interactions */
+"interactions" = "Interactions";
+"no_documented_interactions" = "There are no documented interactions";
+
+/* Dose Screen */
+"pure_dose" = "Pure Dose";
+"pure_oral_dose" = "Pure Oral Dose";
+"pure_route_dose" = "Pure %@ Dose";
+"estimated_standard_deviation" = "Estimated standard deviation";
+"prefer_different_unit" = "Prefer to use a different unit such as %@?";
+"prefer_log_weight" = "Prefer to log weight of bud, hash or log another unit related to joint, vaporizer or bong?";
+"prefer_log_mushrooms" = "Prefer to log weight of mushrooms instead of mg Psilocybin?";
+"prefer_log_drinks" = "Prefer to log number of drinks, beer or wine instead of g of Ethanol?";
+"prefer_log_caffeine" = "Prefer to log coffee, tea or energy drink instead of mg Caffeine?";
+"pills_capsules_powder" = "pills, capsules or raw powder weight";
+"hits" = "hits";
+"sprays_spoons_lines" = "sprays, spoons, scoops, lines or raw powder weight";
+"pouches" = "pouches";
+"patches" = "patches";
+"pills_sprays_powder" = "pills, sprays, spoons or powder weight";
+"log_custom_unit" = "Log %@ (%@)";
+"info" = "Info";
+"dose_disclaimer" = "Dosage information is gathered from users and various resources. It is not a recommendation and should be verified with other sources for accuracy. Always start with lower doses due to differences between individual body weight, tolerance, metabolism, and personal sensitivity.";
+"smoking_dosage_note" = "Depending on your smoking/inhalation method different amounts of substance are lost before entering the body. The dosage should reflect the amount of substance that is actually inhaled.";
+
+/* Administration Routes */
+"swallowed" = "swallowed";
+
+/* Volumetric Dosing */
+"volumetric_dosing" = "Volumetric Dosing";
+"volumetric_dosing_desc" = "Volumetric dosing is the process of dissolving a compound in a liquid to make it easier to measure. In the interest of harm reduction, it is important to use volumetric dosing with certain compounds that are too potent to measure with traditional weighing scales.\nMany psychoactive substances, including benzodiazepines and certain psychedelics, are active at less than a single milligram. Such small quantities cannot be accurately measured with common digital scales, so the substance must instead be dosed volumetrically by weighing out larger amounts of the compound and dissolving it in a calculated volume of a suitable liquid.\n\nSearch the internet to determine what solvent to use. All substances should dissolve in alcohol, but many substances will not dissolve in water.";
+
+/* Titles and Headers */
+"choose_date" = "Choose Date";
+"other_routes" = "Other Routes";
+"limitations" = "Limitations";
+"understanding_visualization" = "Understanding the Visualization";
+
+/* Time Display Options */
+"regular_time" = "Regular time";
+"time_relative_now" = "Time relative to now";
+"time_relative_start" = "Time relative to start";
+"time_between" = "Time between";
+"auto" = "Auto";
+
+/* Dose Levels */
+"threshold" = "threshold";
+"light" = "light";
+"common" = "common";
+"strong" = "strong";
+"heavy" = "heavy";
+
+/* Administration Route Names */
+"sublingual" = "Sublingual";
+"under_tongue" = "under the tongue";
+"buccal" = "Buccal";
+"between_gums_cheek" = "between gums and cheek";
+"insufflated" = "Insufflated";
+"sniffed" = "sniffed";
+"rectal" = "Rectal";
+"up_the_butt" = "up the butt";
+"transdermal" = "Transdermal";
+"through_skin" = "through skin";
+"subcutaneous" = "Subcutaneous";
+"injected_below_skin" = "injected below skin";
+"intramuscular" = "Intramuscular";
+"injected_into_muscle" = "injected into muscle";
+"intravenous" = "Intravenous";
+"injected_into_vein" = "injected into vein";
+"smoked" = "Smoked";
+"heating_burning" = "heating/burning";
+"inhaled" = "Inhaled";
+"vapor_gas" = "vapor/gas";
+/* Long Texts - Tolerance Chart */
+"limitations_text" = "This chart represents the time it would take for a full tolerance, established at the time of ingestion, to decrease to half and ultimately to none.\n\nThe chart assumes instant full tolerance with each ingestion, acting as a basic reference. However for many substances, full tolerance doesn't happen immediately but builds up with prolonged and repeated use. For more nuanced details regarding the tolerance of a specific substance, refer to the corresponding article on PsychonautWiki.\n\nOther influencing factors, like the doses consumed and potential cross-tolerances, are not considered.";
+"understanding_visualization_text" = "Marked by an opaque hue, the phase directly succeeding consumption reflects an elevated tolerance to the particular substance. The subsequent lighter shade indicates a reduced tolerance level. This is followed by a return to zero tolerance, necessitating dosage adjustments akin to initial consumption.\n\nThe 'start date' denotes the earliest ingestion taken into consideration.\n\nThe vertical line marks the present time. The gray vertical line marks the time at which an experience took place if the chart appears within an experience.";
+
+/* Spray Calculator */
+"spray_calculator_title" = "Spray Calculator";
+"solute_weight_per_spray" = "Solute weight per spray";
+"weight_per_spray" = "Weight per Spray";
+"units" = "Units";
+"spray_size" = "Spray Size";
+"result" = "Result";
+"liquid_volume" = "Liquid Volume";
+"solute_weight" = "Solute Weight";
+"purity" = "Purity";
+"spray_calculator_desc" = "Oral or nasal sprays can be used for dosing substances volumetrically.\nNote that substances are the most stable in their salt form and degrade more quickly if dissolved in liquid, which might be relevant to you if you plan on storing it for months or years.\nDon't use tap water because it can become stale and the chlorine inside it breaks down some substances (e.g. LSD). Use distilled water instead.\nLook up the solubility of the substance you want to dissolve in water/ethanol to make sure it will dissolve fully. Most if not all common substances in their salt form are more than soluble enough.\nTo prevent degradation by temperature use ethanol or a water/ethanol mix as the solvent such that it can be put in the freezer without freezing. However don't use ethanol for nasal sprays as this can damage the nasal mucosa.\nPowders for nasal delivery have higher bioavailiability than liquids because of increased stability and residence time on nasal mucosa.";
+
+/* Location */
+"search_location" = "Search Location";
+"enable_location_access" = "Enable location access in settings to add locations to your experiences automatically.";
+
+/* Safer Use Sections */
+"research_text" = "In advance research the duration, subjective effects and potential adverse effects which the substance or combination of substances are likely to produce.\nRead the info in here and also the PsychonautWiki article. Its best to cross-reference with other sources (Tripsit, Erowid, Wikipedia, Bluelight, Reddit, etc).\nThere is no rush.";
+"testing_text" = "Test your substance with anonymous and free drug testing services. If those are not available in your country, use reagent testing kits. Don't trust your dealer to sell reliable product. Its better to have a tested stash instead of relying on a source spontaneously.";
+"dosage_text" = "Know your dose, start small and wait. A full stomach can delay the onset of a swallowed ingestion by hours. A dose that's light for somebody with a tolerance might be too much for you.\n\nInvest in a milligram scale so you can accurately weigh your dosages. Bear in mind that milligram scales under $1000 cannot accurately weigh out doses below 50 mg and are highly inaccurate under 10 - 15 mg. If the amounts of the drug are smaller, use volumetric dosing (dissolving in water or alcohol to make it easier to measure).\n\nMany substances do not have linear dose-response curves, meaning that doubling the dose amount will cause a greater than double increase (and rapidly result in overwhelming, unpleasant, and potentially dangerous experiences), therefore doses should only be adjusted upward with slight increases (e.g. 1/4 to 1/2 of the previous dose).";
+"set_text" = "Make sure your thoughts, desires, feelings, general mood, and any preconceived notions or expectations about what you are about to experience are conducive to the experience. Make sure your body is well. Better not to take it if you feel sick, injured or generally unhealthy.";
+"setting_text" = "An unfamiliar, uncontrollable or otherwise disagreeable social or physical environment may result in an unpleasant or dangerous experience. Choose an environment that provides a sense of safety, familiarity, control, and comfort. For using hallucinogens (psychedelics, dissociatives and deliriants) refer to the safer hallucinogen guide.";
+"combinations_text" = "Don't combine drugs, including Alcohol, without research on the combo. The most common cause of substance-related deaths is the combination of depressants (such as opiates, benzodiazepines, or alcohol) with other depressants.";
+"allergy_tests_text" = "Simply dose a minuscule amount of the substance (e.g. 1/10 to 1/4 of a regular dose) and wait several hours to verify that you do not exhibit an unusual or idiosyncratic response.";
+"reflection_text" = "Carefully monitor the frequency and intensity of any substance use to ensure it is not sliding into abuse and addiction. In particular, many stimulants, opioids, and depressants are known to be highly addictive.";
+"safety_of_others_text" = "Don't drive, operate heavy machinery, or otherwise be directly or indirectly responsible for the safety or care of another person while intoxicated.";
+"recovery_position_text" = "If someone is unconscious and breathing place them into Recovery Position to prevent death by the suffocation of vomit after a drug overdose.\nHave the contact details of help services to hand in case of urgent need.";
+
+/* FAQ Questions and Answers */
+"faq_q1" = "Why is an interaction or other info on a substance present in the PsychonautWiki article but not in the app?";
+"faq_a1" = "Either the info is not annotated correctly in the article, the PsychonautWiki API does not parse the info correctly or the app does not import the info from the API correctly. In any case please report the bug through the app.";
+"faq_q2" = "When does the app show an interaction warning?";
+"faq_a2" = "If there is an interaction with a substance that was logged less than 2 days ago or there is an interaction with any of the following: %@.";
+"faq_q3" = "How can one change or add info on a substance (duration, dose, interactions and effects)?";
+"faq_a3" = "By editing the corresponding PsychonautWiki article.";
+"faq_q4" = "How often are substances updated?";
+"faq_a4" = "On every new version of the app.";
+"faq_q5" = "How is the timeline drawn?";
+"faq_a5" = "The onset duration range from PsychonautWiki defines when the curve starts going up, the comeup how long it goes up for, the peak how long it stays up and the offset how long it takes to come down to baseline. The peak and offset durations are linearly interpolated based on the dose if possible, else it just chooses the middle value of the range. If some of the durations are missing it draws a dotted line. E.g. if the onset and total time is given it draws a line along the bottom for the onset and then it draws a dotted curve to the end of the total time.";
+"faq_q6" = "Why does the timeline not cumulate the curves of different ingestions together?";
+"faq_a6" = "One can not add two curves together because one ingestion might build up tolerance, influencing the curve of the other ingestion. The curve can only be drawn based on data that is available through PsychonautWiki.";

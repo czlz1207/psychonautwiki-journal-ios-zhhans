@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7A4D83F82F37D26700D82ED8 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 7A4D83F62F37D26700D82ED8 /* Localizable.strings */; };
+		7A4D83F92F37D26700D82ED8 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 7A4D83F62F37D26700D82ED8 /* Localizable.strings */; };
 		EA014F9527E5DB5200077FB2 /* WebViewRepresentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA014F9427E5DB5200077FB2 /* WebViewRepresentable.swift */; };
 		EA014F9A27E5E72000077FB2 /* WebViewScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA014F9927E5E72000077FB2 /* WebViewScreen.swift */; };
 		EA014F9E27E5F5F200077FB2 /* RowLabelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA014F9D27E5F5F200077FB2 /* RowLabelView.swift */; };
@@ -399,6 +401,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		7A4D83F42F37D26700D82ED8 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		7A4D83F52F37D26700D82ED8 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Localizable.strings"; sourceTree = "<group>"; };
 		EA014F9427E5DB5200077FB2 /* WebViewRepresentable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebViewRepresentable.swift; sourceTree = "<group>"; };
 		EA014F9927E5E72000077FB2 /* WebViewScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebViewScreen.swift; sourceTree = "<group>"; };
 		EA014F9D27E5F5F200077FB2 /* RowLabelView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RowLabelView.swift; sourceTree = "<group>"; };
@@ -743,6 +747,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		7A4D83F72F37D26700D82ED8 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				7A4D83F62F37D26700D82ED8 /* Localizable.strings */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
 		EA014F9627E5DC6500077FB2 /* Web */ = {
 			isa = PBXGroup;
 			children = (
@@ -1461,6 +1473,7 @@
 		EAE4710526CBA57F009FB0EC /* PsychonautWiki Journal */ = {
 			isa = PBXGroup;
 			children = (
+				7A4D83F72F37D26700D82ED8 /* Resources */,
 				EA39B2052BB981E0000B1C4E /* App Intents */,
 				EAF76CA727D90CE500945587 /* Enums */,
 				EAE4715B26CBA664009FB0EC /* Extensions */,
@@ -1738,6 +1751,7 @@
 			knownRegions = (
 				en,
 				Base,
+				"zh-Hans",
 			);
 			mainGroup = EAE470FA26CBA57F009FB0EC;
 			packageReferences = (
@@ -1763,6 +1777,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				EA2D19672B11D9B000B270A2 /* substances.json in Resources */,
+				7A4D83F82F37D26700D82ED8 /* Localizable.strings in Resources */,
 				EA085DD929607229001638AC /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1780,6 +1795,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				EAE4809929743ACE00B600EF /* LaunchScreenEye.png in Resources */,
+				7A4D83F92F37D26700D82ED8 /* Localizable.strings in Resources */,
 				EAE48097297433D100B600EF /* LaunchScreen.storyboard in Resources */,
 				EAE4722E26CBAE5B009FB0EC /* Assets.xcassets in Resources */,
 				EA3E74612BADA9D500162354 /* PrivacyInfo.xcprivacy in Resources */,
@@ -2159,6 +2175,18 @@
 		};
 /* End PBXTargetDependency section */
 
+/* Begin PBXVariantGroup section */
+		7A4D83F62F37D26700D82ED8 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7A4D83F42F37D26700D82ED8 /* en */,
+				7A4D83F52F37D26700D82ED8 /* zh-Hans */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
 /* Begin XCBuildConfiguration section */
 		EA085DDF29607229001638AC /* Debug */ = {
 			isa = XCBuildConfiguration;
@@ -2168,7 +2196,7 @@
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 6S7AHDRUD6;
+				DEVELOPMENT_TEAM = DWXR3UZ4N8;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = TimelineWidget/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = TimelineWidget;
@@ -2180,7 +2208,7 @@
 					"@executable_path/../../Frameworks",
 				);
 				MARKETING_VERSION = 11.11;
-				PRODUCT_BUNDLE_IDENTIFIER = "isaak.PsychonautWiki-Journal-Debug.TimelineWidget";
+				PRODUCT_BUNDLE_IDENTIFIER = "czlz1207.PsychonautWiki-Journal-Debug.TimelineWidget";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -2197,7 +2225,7 @@
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 6S7AHDRUD6;
+				DEVELOPMENT_TEAM = DWXR3UZ4N8;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = TimelineWidget/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = TimelineWidget;
@@ -2209,7 +2237,7 @@
 					"@executable_path/../../Frameworks",
 				);
 				MARKETING_VERSION = 11.11;
-				PRODUCT_BUNDLE_IDENTIFIER = "isaak.PsychonautWiki-Journal.TimelineWidget";
+				PRODUCT_BUNDLE_IDENTIFIER = "czlz1207.PsychonautWiki-Journal.TimelineWidget";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -2225,11 +2253,11 @@
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 6S7AHDRUD6;
+				DEVELOPMENT_TEAM = DWXR3UZ4N8;
 				GENERATE_INFOPLIST_FILE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = isaak.JournalTests;
+				PRODUCT_BUNDLE_IDENTIFIER = czlz1207.JournalTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
@@ -2245,11 +2273,11 @@
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 6S7AHDRUD6;
+				DEVELOPMENT_TEAM = DWXR3UZ4N8;
 				GENERATE_INFOPLIST_FILE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = isaak.JournalTests;
+				PRODUCT_BUNDLE_IDENTIFIER = czlz1207.JournalTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
@@ -2386,7 +2414,7 @@
 				CODE_SIGN_ENTITLEMENTS = "PsychonautWiki Journal/PsychonautWiki Journal.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 6S7AHDRUD6;
+				DEVELOPMENT_TEAM = DWXR3UZ4N8;
 				ENABLE_PREVIEWS = YES;
 				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				INFOPLIST_FILE = "PsychonautWiki Journal/Info.plist";
@@ -2398,7 +2426,7 @@
 				);
 				MARKETING_VERSION = 11.11;
 				MY_BUNDLE_DISPLAY_NAME = Debug;
-				PRODUCT_BUNDLE_IDENTIFIER = "isaak.PsychonautWiki-Journal-Debug";
+				PRODUCT_BUNDLE_IDENTIFIER = "czlz1207.PsychonautWiki-Journal-Debug";
 				PRODUCT_NAME = Journal;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -2413,7 +2441,7 @@
 				CODE_SIGN_ENTITLEMENTS = "PsychonautWiki Journal/PsychonautWiki Journal.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 6S7AHDRUD6;
+				DEVELOPMENT_TEAM = DWXR3UZ4N8;
 				ENABLE_PREVIEWS = YES;
 				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				INFOPLIST_FILE = "PsychonautWiki Journal/Info.plist";
@@ -2425,7 +2453,7 @@
 				);
 				MARKETING_VERSION = 11.11;
 				MY_BUNDLE_DISPLAY_NAME = Journal;
-				PRODUCT_BUNDLE_IDENTIFIER = "isaak.PsychonautWiki-Journal";
+				PRODUCT_BUNDLE_IDENTIFIER = "czlz1207.PsychonautWiki-Journal";
 				PRODUCT_NAME = Journal;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";

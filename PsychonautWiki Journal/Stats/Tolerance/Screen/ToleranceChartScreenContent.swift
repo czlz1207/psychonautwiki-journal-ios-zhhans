@@ -30,11 +30,11 @@ struct ToleranceChartScreenContent: View {
         List {
             Section {
                 DatePicker(
-                    "Start Date",
+                    "start_date",
                     selection: $sinceDate,
                     displayedComponents: [.date]
                 )
-                Toggle("Relative time", isOn: $isTimeRelative).tint(.accentColor)
+                Toggle("relative_time", isOn: $isTimeRelative).tint(.accentColor)
                 ToleranceChart(
                     toleranceWindows: toleranceWindows,
                     numberOfRows: numberOfSubstancesInChart,
@@ -52,11 +52,11 @@ struct ToleranceChartScreenContent: View {
             .listRowSeparator(.hidden)
             Section {
                 NavigationLink(value: GlobalNavigationDestination.toleranceChartExplanation) {
-                    Label("Chart Limitations", systemImage: "info.circle")
+                    Label("chart_limitations", systemImage: "info.circle")
                 }
                 if !substances.isEmpty {
                     NavigationLink(value: GlobalNavigationDestination.toleranceTexts(substances: substances)) {
-                        Label("Tolerance Info", systemImage: "doc.plaintext")
+                        Label("tolerance_info", systemImage: "doc.plaintext")
                     }
                 }
             }
@@ -68,7 +68,7 @@ struct ToleranceChartScreenContent: View {
                 }
             }
         }
-        .navigationTitle("Tolerance")
+        .navigationTitle("tolerance")
     }
 }
 

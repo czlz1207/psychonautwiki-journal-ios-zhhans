@@ -84,8 +84,7 @@ struct ChooseDoseScreenContent: View {
             ]))
     }
 
-    static let doseDisclaimer =
-        "Dosage information is gathered from users and various resources. It is not a recommendation and should be verified with other sources for accuracy. Always start with lower doses due to differences between individual body weight, tolerance, metabolism, and personal sensitivity."
+    static let doseDisclaimer = NSLocalizedString("dose_disclaimer", comment: "")
 
     let substance: Substance
     let administrationRoute: AdministrationRoute
@@ -101,7 +100,7 @@ struct ChooseDoseScreenContent: View {
     var body: some View {
         screen.toolbar {
             ToolbarItem(placement: .cancellationAction) {
-                Button("Cancel") {
+                Button("cancel") {
                     dismiss()
                 }
             }
@@ -163,7 +162,7 @@ struct ChooseDoseScreenContent: View {
                 .onFirstAppear {
                     isDoseFieldFocused = true
                 }
-                Toggle("Estimate", isOn: $isEstimate)
+                Toggle("estimate", isOn: $isEstimate)
                     .tint(.accentColor)
                     .onChange(of: isEstimate, perform: { newIsEstimate in
                         if newIsEstimate {
@@ -175,7 +174,7 @@ struct ChooseDoseScreenContent: View {
                     HStack {
                         Image(systemName: "plusminus")
                         TextField(
-                            "Estimated standard deviation",
+                            LocalizedStringKey("estimated_standard_deviation"),
                             value: $selectedDoseDeviation,
                             format: .number
                         )
@@ -190,7 +189,7 @@ struct ChooseDoseScreenContent: View {
                 }
             }
         } header: {
-            Text("Pure \(administrationRoute.rawValue.capitalized) Dose")
+            Text(String(format: NSLocalizedString("pure_route_dose", comment: ""), administrationRoute.rawValue.capitalized))
         } footer: {
             if
                 let units = roaDose?.units,
@@ -205,7 +204,7 @@ struct ChooseDoseScreenContent: View {
     }
 
     private var unknownDoseLink: some View {
-        NavigationLink("Use unknown dose", value: FinishIngestionScreenArguments(
+        NavigationLink("use_unknown_dose_lower", value: FinishIngestionScreenArguments(
             substanceName: substance.name,
             administrationRoute: administrationRoute,
             dose: nil,
@@ -216,32 +215,32 @@ struct ChooseDoseScreenContent: View {
 
     var customUnitPrompt: String {
         if substance.name == "Cannabis" && administrationRoute == .smoked {
-            "Prefer to log weight of bud, hash or log another unit related to joint, vaporizer or bong?"
+            NSLocalizedString("prefer_log_weight", comment: "")
         } else if (substance.name == "Psilocybin mushrooms") {
-            "Prefer to log weight of mushrooms instead of mg Psilocybin?"
+            NSLocalizedString("prefer_log_mushrooms", comment: "")
         } else if (substance.name == "Alcohol") {
-            "Prefer to log number of drinks, beer or wine instead of g of Ethanol?"
+            NSLocalizedString("prefer_log_drinks", comment: "")
         } else if (substance.name == "Caffeine") {
-            "Prefer to log coffee, tea or energy drink instead of mg Caffeine?"
+            NSLocalizedString("prefer_log_caffeine", comment: "")
         } else {
-            "Prefer to use a different unit such as \(sampleUnitText)?"
+            String(format: NSLocalizedString("prefer_different_unit", comment: ""), sampleUnitText)
         }
     }
 
     var sampleUnitText: String {
         switch administrationRoute {
         case .oral:
-            "pills, capsules or raw powder weight"
+            NSLocalizedString("pills_capsules_powder", comment: "")
         case .smoked:
-            "hits"
+            NSLocalizedString("hits", comment: "")
         case .insufflated:
-            "sprays, spoons, scoops, lines or raw powder weight"
+            NSLocalizedString("sprays_spoons_lines", comment: "")
         case .buccal:
-            "pouches"
+            NSLocalizedString("pouches", comment: "")
         case .transdermal:
-            "patches"
+            NSLocalizedString("patches", comment: "")
         default:
-            "pills, sprays, spoons or powder weight"
+            NSLocalizedString("pills_sprays_powder", comment: "")
         }
     }
 
@@ -251,12 +250,12 @@ struct ChooseDoseScreenContent: View {
             if isEyeOpen {
                 Section {
                     Text(customUnitPrompt)
-                    Button("Add a custom unit") {
+                    Button("add_a_custom_unit") {
                         isAddCustomUnitSheetShown.toggle()
                     }
                     ForEach(customUnits.wrappedValue) { customUnit in
                         NavigationLink(value: customUnit) {
-                            Text("Log \(customUnit.pluralizableUnit.plural) (\(customUnit.nameUnwrapped))")
+                            Text(String(format: NSLocalizedString("log_custom_unit", comment: ""), customUnit.pluralizableUnit.plural, customUnit.nameUnwrapped))
                         }
                     }
                 }
@@ -275,19 +274,19 @@ struct ChooseDoseScreenContent: View {
                 let isSmokedRoute = administrationRoute == .smoked || administrationRoute == .inhaled
                 let shouldUseVolumetricDosing = roaDose?.shouldUseVolumetricDosing ?? false
                 if isSmokedRoute || shouldUseVolumetricDosing {
-                    Section("Info") {
+                    Section(LocalizedStringKey("info")) {
                         if isSmokedRoute {
                             Text(
-                                "Depending on your smoking/inhalation method different amounts of substance are lost before entering the body. The dosage should reflect the amount of substance that is actually inhaled.")
+                                NSLocalizedString("smoking_dosage_note", comment: ""))
                         }
                         if shouldUseVolumetricDosing {
-                            NavigationLink("Volumetric Dosing Recommended") {
+                            NavigationLink("volumetric_dosing_recommended") {
                                 VolumetricDosingScreen()
                             }
                         }
                     }
                 }
-                Section("Disclaimer") {
+                Section(LocalizedStringKey("disclaimer")) {
                     Text(Self.doseDisclaimer)
                 }
             }

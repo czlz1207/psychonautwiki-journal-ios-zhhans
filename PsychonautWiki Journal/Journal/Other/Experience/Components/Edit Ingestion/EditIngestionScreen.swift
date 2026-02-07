@@ -210,7 +210,7 @@ struct EditIngestionContent: View {
                                 roaDose: roaDose,
                                 doseMaybe: $dose,
                                 selectedUnits: $units)
-                            Toggle("Estimate", isOn: $isEstimate)
+                            Toggle("estimate", isOn: $isEstimate)
                                 .tint(.accentColor)
                             if isEstimate {
                                 HStack {
@@ -263,8 +263,8 @@ struct EditIngestionContent: View {
                         }
                     }.listRowSeparator(.hidden)
                 }
-                Section("Notes") {
-                    TextField("Enter Note", text: $note, axis: .vertical)
+                Section(LocalizedStringKey("notes")) {
+                    TextField(LocalizedStringKey("enter_note"), text: $note, axis: .vertical)
                         .autocapitalization(.sentences)
                 }
                 Section {
@@ -307,15 +307,15 @@ struct EditIngestionContent: View {
                     }
                 }.listRowSeparator(.hidden)
                 Section {
-                    Toggle("Hide in timeline", isOn: $isHidden).tint(.accentColor)
+                    Toggle("hide_in_timeline", isOn: $isHidden).tint(.accentColor)
                     Button(action: {
                         dismiss()
                         addIngestionAtSameTime()
                     }) {
-                        Label("Add ingestion at same time", systemImage: "plus")
+                        Label("add_ingestion_at_same_time", systemImage: "plus")
                     }
                     Button(action: delete) {
-                        Label("Delete ingestion", systemImage: "trash").foregroundColor(.red)
+                        Label(LocalizedStringKey("delete_ingestion"), systemImage: "trash").foregroundColor(.red)
                     }
                 }
             }
@@ -325,17 +325,17 @@ struct EditIngestionContent: View {
             .toolbar {
                 ToolbarItem(placement: .confirmationAction) {
                     Button(action: save, label: {
-                        Text("Save")
+                        Text(LocalizedStringKey("save"))
                     })
                 }
                 ToolbarItem(placement: .cancellationAction) {
                     Button(action: {dismiss()}, label: {
-                        Text("Cancel")
+                        Text(LocalizedStringKey("cancel"))
                     })
                 }
             }
             .scrollDismissesKeyboard(.interactively)
-            .navigationTitle("Edit Ingestion")
+            .navigationTitle("edit_ingestion")
         }
     }
 

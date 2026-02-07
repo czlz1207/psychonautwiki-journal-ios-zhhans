@@ -60,10 +60,10 @@ struct EditNotesContent: View {
                     .frame(minHeight: 300)
             }
             .scrollDismissesKeyboard(.interactively)
-            .navigationTitle("Edit Notes")
+            .navigationTitle("edit_notes")
             .toolbar {
                 ToolbarItem(placement: .cancellationAction) {
-                    Button("Cancel") {
+                    Button("cancel") {
                         dismiss()
                     }
                 }

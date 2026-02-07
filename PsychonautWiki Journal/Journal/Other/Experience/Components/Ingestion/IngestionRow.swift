@@ -68,7 +68,7 @@ private struct IngestionRowContent<Content: View>: View {
                         Text(ingestion.noteUnwrapped)
                     }
                     if let stomachFullness = ingestion.stomachFullnessUnwrapped, ingestion.administrationRouteUnwrapped == .oral, stomachFullness != .empty {
-                        Text("\(stomachFullness.text) Stomach: ~\(stomachFullness.onsetDelayForOralInHours.asRoundedReadableString) hours delay")
+                        Text("\(stomachFullness.text) Stomach: ~\(stomachFullness.onsetDelayForOralInHours.asRoundedReadableString) \(NSLocalizedString("hours_delay", comment: ""))")
                     }
                 }
                 .font(.subheadline)

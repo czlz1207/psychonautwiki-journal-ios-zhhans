@@ -77,7 +77,7 @@ struct DosageStatWeekChart: View {
 
             }
         } else {
-            Text("No \(substanceName) ingestions in the last 26 weeks").foregroundStyle(.secondary)
+            Text("no_ingestions_last_26_weeks").foregroundStyle(.secondary)
         }
     }
 }

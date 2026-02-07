@@ -64,7 +64,7 @@ struct FinishIngestionScreen: View {
     var body: some View {
         screen.toolbar {
             ToolbarItem(placement: .cancellationAction) {
-                Button("Cancel") {
+                Button("cancel") {
                     dismiss()
                 }
             }
@@ -86,7 +86,7 @@ struct FinishIngestionScreen: View {
                     }
                 } catch {
                     Task { @MainActor in
-                        toastViewModel.showErrorToast(message: "Failed Ingestion")
+                        toastViewModel.showErrorToast(message: NSLocalizedString("failed_ingestion", comment: ""))
                         generateFailedHaptic()
                         dismiss()
                     }
@@ -97,7 +97,7 @@ struct FinishIngestionScreen: View {
 
     var screen: some View {
         Form {
-            Section("Ingestion") {
+            Section("ingestion") {
                 TimePointOrRangePicker(
                     selectedTimePickerOption: $selectedTimePickerOption,
                     selectedTime: $selectedTime,
@@ -111,18 +111,18 @@ struct FinishIngestionScreen: View {
                             experiences: experiencesWithinLargerRange)
                     } label: {
                         HStack {
-                            Text("Experience")
+                            Text("experience")
                             Spacer()
                             if let exp = selectedExperience {
                                 Text(exp.titleUnwrapped)
                             } else {
-                                Text("New Experience")
+                                Text("new_experience")
                             }
                         }
                     }
                 }
                 HStack {
-                    Text("Consumer")
+                    Text("consumer")
                     Spacer()
                     Button {
                         sheetToShow = .editConsumer
@@ -140,7 +140,7 @@ struct FinishIngestionScreen: View {
                     sheetToShow = .editNote
                 } label: {
                     if enteredNote.isEmpty {
-                        Label("Add Note", systemImage: "plus")
+                        Label("add_note", systemImage: "plus")
                     } else {
                         Label(enteredNote, systemImage: "pencil").lineLimit(1)
                     }
@@ -151,12 +151,12 @@ struct FinishIngestionScreen: View {
                 selectExperienceBasedOnCurrentTime()
             }
             if selectedExperience == nil {
-                Section("New Experience") {
+                Section("new_experience") {
                     Button {
                         sheetToShow = .editTitle
                     } label: {
                         if enteredTitle.isEmpty {
-                            Label("Add Title", systemImage: "plus")
+                            Label("add_title", systemImage: "plus")
                         } else {
                             Label(enteredTitle, systemImage: "pencil").lineLimit(1)
                         }
@@ -167,7 +167,7 @@ struct FinishIngestionScreen: View {
                         if let locationName = locationManager.selectedLocation?.name {
                             Label(locationName, systemImage: "mappin")
                         } else {
-                            Label("Add Location", systemImage: "plus")
+                            Label("add_location", systemImage: "plus")
                         }
                     }
                     if #available(iOS 16.2, *) {
@@ -178,7 +178,7 @@ struct FinishIngestionScreen: View {
                             !ActivityManager.shared.isActivityActive,
                             isTimeRecentOrFuture
                         {
-                            Toggle("Start Live Activity", isOn: $wantsToStartLiveActivity).tint(.accentColor)
+                            Toggle("start_live_activity", isOn: $wantsToStartLiveActivity).tint(.accentColor)
                         }
                     }
                 }
@@ -191,7 +191,7 @@ struct FinishIngestionScreen: View {
                         otherColors: otherColors)
                 } label: {
                     HStack {
-                        Text("\(arguments.substanceName) Color")
+                        Text(LocalizedStringKey(stringLiteral: String(format: NSLocalizedString("color", comment: ""), arguments.substanceName)))
                         Spacer()
                         Image(systemName: "circle.fill").foregroundColor(selectedColor.swiftUIColor)
                     }
@@ -202,7 +202,7 @@ struct FinishIngestionScreen: View {
             wantsToStartLiveActivity = shouldAutomaticallyStartLiveActivity
             generator.prepare()
         }
-        .navigationBarTitle("Finish Ingestion")
+        .navigationTitle("finish_ingestion")
         .sheet(item: $sheetToShow, content: { sheet in
             switch sheet {
             case .editTitle:

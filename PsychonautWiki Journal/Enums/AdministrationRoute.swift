@@ -38,27 +38,27 @@ enum AdministrationRoute: String, Codable, CaseIterable, Identifiable {
     var clarification: String {
         switch self {
         case .oral:
-            return "swallowed"
+            return NSLocalizedString("swallowed", comment: "")
         case .sublingual:
-            return "under the tongue"
+            return NSLocalizedString("under_tongue", comment: "")
         case .buccal:
-            return "between gums and cheek"
+            return NSLocalizedString("between_gums_cheek", comment: "")
         case .insufflated:
-            return "sniffed"
+            return NSLocalizedString("sniffed", comment: "")
         case .rectal:
-            return "up the butt"
+            return NSLocalizedString("up_the_butt", comment: "")
         case .transdermal:
-            return "through skin"
+            return NSLocalizedString("through_skin", comment: "")
         case .subcutaneous:
-            return "injected below skin"
+            return NSLocalizedString("injected_below_skin", comment: "")
         case .intramuscular:
-            return "injected into muscle"
+            return NSLocalizedString("injected_into_muscle", comment: "")
         case .intravenous:
-            return "injected into vein"
+            return NSLocalizedString("injected_into_vein", comment: "")
         case .smoked:
-            return "heating/burning"
+            return NSLocalizedString("heating_burning", comment: "")
         case .inhaled:
-            return "vapor/gas"
+            return NSLocalizedString("vapor_gas", comment: "")
         }
     }
 

@@ -40,10 +40,10 @@ struct AddTimedNoteScreen: View {
                 alreadyUsedColors: alreadyUsedColors,
                 otherColors: otherColors
             )
-            .navigationTitle("Add Timed Note")
+            .navigationTitle("add_timed_note")
             .toolbar {
                 ToolbarItem(placement: .cancellationAction) {
-                    Button("Cancel") {
+                    Button("cancel") {
                         dismiss()
                     }
                 }
@@ -66,7 +66,7 @@ struct AddTimedNoteScreen: View {
     var doneButton: some View {
         DoneButton {
             save()
-            toastViewModel.showSuccessToast(message: "Note Added")
+            toastViewModel.showSuccessToast(message: NSLocalizedString("note_added", comment: ""))
             dismiss()
         }
     }

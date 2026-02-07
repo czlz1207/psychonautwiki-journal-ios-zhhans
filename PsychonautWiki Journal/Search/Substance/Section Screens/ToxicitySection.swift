@@ -21,7 +21,7 @@ struct ToxicitySection: View {
     let substance: Substance
 
     var body: some View {
-        Section("Toxicity") {
+        Section("toxicity") {
             ForEach(substance.toxicities, id: \.self) { toxicity in
                 Text(toxicity)
             }

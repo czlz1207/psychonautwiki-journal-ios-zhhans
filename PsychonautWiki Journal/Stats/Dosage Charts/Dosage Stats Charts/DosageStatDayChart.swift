@@ -75,7 +75,7 @@ struct DosageStatDayChart: View {
                     .frame(height: 240)
             }
         } else {
-            Text("No \(substanceName) ingestions in the last 30 days").foregroundStyle(.secondary)
+            Text("no_ingestions_last_30_days").foregroundStyle(.secondary)
         }
     }
 }

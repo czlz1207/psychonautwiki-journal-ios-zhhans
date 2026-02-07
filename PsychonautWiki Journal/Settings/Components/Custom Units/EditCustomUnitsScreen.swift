@@ -61,12 +61,12 @@ struct EditCustomUnitsScreen: View {
         }
         .toolbar {
             ToolbarItem(placement: .cancellationAction) {
-                Button("Cancel") {
+                Button("cancel") {
                     dismiss()
                 }
             }
             ToolbarItem(placement: .confirmationAction) {
-                Button("Save") {
+                Button("save") {
                     save()
                 }
             }
@@ -119,7 +119,7 @@ struct EditCustomUnitsScreenContent: View {
                     let pluralizableUnit = PluralizableUnit(singular: "ingestion", plural: "ingestions")
                     Text("\(ingestionCount.with(pluralizableUnit: pluralizableUnit)) are affected by this edit")
                 } else {
-                    Text("No ingestions are using this unit yet")
+                    Text("no_ingestions_using_unit")
                 }
             }
             Section {
@@ -144,7 +144,7 @@ struct EditCustomUnitsScreenContent: View {
                 } label: {
                     Text("Unit plural:")
                 }
-                TextField("Enter Note", text: $note)
+                TextField(LocalizedStringKey("enter_note"), text: $note)
                     .autocapitalization(.sentences)
             }
             Section {
@@ -156,7 +156,7 @@ struct EditCustomUnitsScreenContent: View {
                     doseMaybe: $dosePerUnit,
                     selectedUnits: $originalUnit
                 )
-                Toggle("Estimate", isOn: $isEstimate.animation())
+                Toggle("estimate", isOn: $isEstimate.animation())
                     .tint(.accentColor)
                 if isEstimate {
                     HStack {
@@ -178,7 +178,7 @@ struct EditCustomUnitsScreenContent: View {
 
             let isUnknownDose = dosePerUnit == nil
             if let originalUnit = roaDose?.units, !unit.isEmpty {
-                Section("Ingestion Preview") {
+                Section("ingestion_preview") {
                     IngestionRowPreview(
                         substanceName: substanceName,
                         administrationRoute: administrationRoute,
@@ -195,7 +195,7 @@ struct EditCustomUnitsScreenContent: View {
             }
 
             Section {
-                Toggle("Archive", isOn: $isArchived).tint(.accentColor)
+                Toggle("archive", isOn: $isArchived).tint(.accentColor)
             } footer: {
                 Text("Archived custom units don't show up when adding ingestions")
             }
@@ -208,11 +208,11 @@ struct EditCustomUnitsScreenContent: View {
                         delete()
                     }
                 } label: {
-                    Label("Delete Unit", systemImage: "trash").foregroundColor(.red)
+                    Label("delete_unit", systemImage: "trash").foregroundColor(.red)
                 }
             }
         }
-        .alert("Are you sure?", isPresented: $isDeleteShown, actions: {
+        .alert(LocalizedStringKey("are_you_sure"), isPresented: $isDeleteShown, actions: {
             Button(role: .destructive) {
                 delete()
             } label: {
@@ -221,13 +221,13 @@ struct EditCustomUnitsScreenContent: View {
             Button(role: .cancel) {
 
             } label: {
-                Text("Cancel")
+                Text(LocalizedStringKey("cancel"))
             }
         }, message: {
             Text("Deleting this unit will delete \(ingestionCount.with(pluralizableUnit: PluralizableUnit(singular: "ingestion", plural: "ingestions"))) that are using it. If you don't want to use it anymore archive it instead.")
         })
         .scrollDismissesKeyboard(.interactively)
-        .navigationTitle("Edit Unit")
+        .navigationTitle("edit_unit")
     }
 
     private let multiplier: Double = 3

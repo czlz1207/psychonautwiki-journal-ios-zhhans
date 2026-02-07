@@ -38,7 +38,7 @@ struct CustomSubstanceChooseDoseScreen: View {
     var body: some View {
         screen.toolbar {
             ToolbarItem(placement: .cancellationAction) {
-                Button("Cancel") {
+                Button("cancel") {
                     dismiss()
                 }
             }
@@ -66,7 +66,7 @@ struct CustomSubstanceChooseDoseScreen: View {
     }
 
     private var unknownDoseLink: some View {
-        NavigationLink("Use Unknown Dose", value: getDestinationArguments(dose: nil))
+        NavigationLink("use_unknown_dose", value: getDestinationArguments(dose: nil))
     }
 
     @FocusState private var isEstimatedDeviationFocused: Bool
@@ -89,7 +89,7 @@ struct CustomSubstanceChooseDoseScreen: View {
                     Text(arguments.units)
                 }
                 .font(.title)
-                Toggle("Estimate", isOn: $isEstimate)
+                Toggle("estimate", isOn: $isEstimate)
                     .tint(.accentColor)
                     .onChange(of: isEstimate, perform: { newIsEstimate in
                         if newIsEstimate {

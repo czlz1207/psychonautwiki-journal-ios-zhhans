@@ -69,7 +69,7 @@ struct CustomUnitsChooseSubstanceScreen: View {
                     }
                 }
                 if substancesFilteredAndSorted.isEmpty && customSubstancesFiltered.isEmpty {
-                    Text("No Results")
+                    Text("no_results")
                         .foregroundColor(.secondary)
                 }
             }
@@ -77,10 +77,10 @@ struct CustomUnitsChooseSubstanceScreen: View {
             .scrollDismissesKeyboard(.interactively)
             .searchable(text: $searchText)
             .disableAutocorrection(true)
-            .navigationTitle("Choose Substance")
+            .navigationTitle("choose_substance")
             .toolbar {
                 ToolbarItem(placement: .cancellationAction) {
-                    Button("Cancel") {
+                    Button("cancel") {
                         dismiss()
                     }
                 }

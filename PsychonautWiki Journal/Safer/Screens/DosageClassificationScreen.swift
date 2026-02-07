@@ -70,7 +70,7 @@ struct DosageClassificationScreen: View {
                     """)
             }
         }
-        .navigationTitle("Dosage Classification")
+        .navigationTitle("dosage_classification")
     }
 }
 

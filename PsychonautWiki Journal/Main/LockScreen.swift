@@ -27,7 +27,7 @@ struct LockScreen: View {
                 .frame(width: 150, height: 150, alignment: .top)
             if !isFaceIDEnabled {
                 Spacer().frame(height: 20)
-                Text("Face ID is disabled.\nEnable it for Journal in settings to unlock the app.")
+                Text("face_id_disabled_message")
                     .font(.title2)
                     .foregroundColor(.secondary)
                     .multilineTextAlignment(.center)

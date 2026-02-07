@@ -22,13 +22,13 @@ class ToastViewModel: ObservableObject {
     @Published var isShowingToast = false
     @Published var isSuccessToast = false
 
-    func showErrorToast(message: String = "Error") {
+    func showErrorToast(message: String = NSLocalizedString("error", comment: "")) {
         toastMessage = message
         isShowingToast = true
         isSuccessToast = false
     }
 
-    func showSuccessToast(message: String = "Ingestion Added") {
+    func showSuccessToast(message: String = NSLocalizedString("ingestion_added", comment: "")) {
         toastMessage = message
         isShowingToast = true
         isSuccessToast = true
